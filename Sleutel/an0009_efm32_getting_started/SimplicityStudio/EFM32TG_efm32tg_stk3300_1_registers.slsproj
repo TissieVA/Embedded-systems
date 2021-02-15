@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="EFM32TG_efm32tg_stk3300_1_registers" kitCompatibility="com.silabs.kit.si32.efm32.efm32tg" partCompatibility="com.silabs.mcu.si32.efm32.efm32tg.efm32tg840f32" toolchainCompatibility="" sdkCompatibility="com.silabs.sdk.si32.efm32.sls:[2.0.0-3.0.0)" contentRoot="../">
+  <includePath uri="." />
+  <module id="com.silabs.ide.si32.sdk.efm32.v2.common.CMSIS">
+    <exclude pattern=".*" />
+  </module>
+  <module id="com.silabs.ide.si32.sdk.efm32.v2.common.emlib">
+    <include pattern="emlib/em_system.c" />
+  </module>
+  <module id="com.silabs.ide.si32.sdk.efm32.v2.part">
+    <include pattern="CMSIS/.*/startup_gcc_.*.s" />
+    <include pattern="CMSIS/.*/startup_iar_.*.s" />
+    <include pattern="CMSIS/.*/system_.*.c" />
+  </module>
+  <macroDefinition name="STK3300" />
+  <folder name="src">
+    <file name="1_registers.c" uri="1_registers.c" />
+  </folder>
+</project>
