@@ -55,3 +55,120 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\tijsv\O
 
 !ENTRY com.silabs.ss.platform.content.core 4 0 2021-02-16 13:58:38.966
 !MESSAGE Local timestamp file does not exist: C:\SiliconLabs\SimplicityStudio\v4\offline\common\Simplicity_Studio_Terms_of_Use_and_Privacy_Statement.timestamp
+
+!ENTRY com.silabs.ss.platform.rcp.core 4 0 2021-02-16 14:01:16.917
+!MESSAGE Demo information file is empty at C:\SiliconLabs\SimplicityStudio\v4\configuration\org.eclipse.osgi\260\0\.cp\demos\demos.xml
+
+!ENTRY com.silabs.ss.framework.project.core 4 0 2021-02-16 14:01:30.976
+!MESSAGE Module file not found: C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.7\.studio\.\modules\LibraryModules\Micrium\uCos3Client.slsproj
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-02-16 14:01:40.885
+!MESSAGE Indexed 'SLSTK3400A_blink' (8 sources, 91 headers) in 5,56 sec: 5.074 declarations; 11.892 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.core.resources 4 567 2021-02-16 14:02:19.960
+!MESSAGE Failed to read project description file from location 'C:\Users\tijsv\SimplicityStudio\v4_workspace\Ex1_2\.project'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\tijsv\SimplicityStudio\v4_workspace\Ex1_2\.project (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:955)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1920)
+	at com.silabs.ss.framework.ide.api.project.sls.core.creator.BaseCreateConvertProjectHandler.runImportSLSArchive(BaseCreateConvertProjectHandler.java:329)
+	at com.silabs.ss.framework.ide.api.project.sls.core.creator.BaseCreateConvertProjectHandler.createOrConvertProject(BaseCreateConvertProjectHandler.java:281)
+	at com.silabs.ss.framework.project.api.core.external.ImportProjectHandler.createOrConvertProject(ImportProjectHandler.java:82)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.createConvertProject(SLSProjectHandlerEngine.java:157)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.importProject(SLSProjectHandlerEngine.java:192)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.runImport(SLSProjectHandlerEngine.java:336)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.access$3(SLSProjectHandlerEngine.java:326)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine$1.execute(SLSProjectHandlerEngine.java:220)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine$2.runInWorkspace(SLSProjectHandlerEngine.java:250)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 567 2021-02-16 14:02:42.149
+!MESSAGE Failed to read project description file from location 'C:\Users\tijsv\SimplicityStudio\v4_workspace\Ex1_2\.project'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\tijsv\SimplicityStudio\v4_workspace\Ex1_2\.project (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:955)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1920)
+	at com.silabs.ss.framework.ide.api.project.sls.core.creator.BaseCreateConvertProjectHandler.runImportSLSArchive(BaseCreateConvertProjectHandler.java:329)
+	at com.silabs.ss.framework.ide.api.project.sls.core.creator.BaseCreateConvertProjectHandler.createOrConvertProject(BaseCreateConvertProjectHandler.java:281)
+	at com.silabs.ss.framework.project.api.core.external.ImportProjectHandler.createOrConvertProject(ImportProjectHandler.java:82)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.createConvertProject(SLSProjectHandlerEngine.java:157)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.importProject(SLSProjectHandlerEngine.java:192)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.runImport(SLSProjectHandlerEngine.java:336)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.access$3(SLSProjectHandlerEngine.java:326)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine$1.execute(SLSProjectHandlerEngine.java:220)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine$2.runInWorkspace(SLSProjectHandlerEngine.java:250)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 567 2021-02-16 14:03:02.489
+!MESSAGE Failed to read project description file from location 'C:\Users\tijsv\SimplicityStudio\v4_workspace\Oef1_2\.project'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\tijsv\SimplicityStudio\v4_workspace\Oef1_2\.project (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:955)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1920)
+	at com.silabs.ss.framework.ide.api.project.sls.core.creator.BaseCreateConvertProjectHandler.runImportSLSArchive(BaseCreateConvertProjectHandler.java:329)
+	at com.silabs.ss.framework.ide.api.project.sls.core.creator.BaseCreateConvertProjectHandler.createOrConvertProject(BaseCreateConvertProjectHandler.java:281)
+	at com.silabs.ss.framework.project.api.core.external.ImportProjectHandler.createOrConvertProject(ImportProjectHandler.java:82)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.createConvertProject(SLSProjectHandlerEngine.java:157)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.importProject(SLSProjectHandlerEngine.java:192)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.runImport(SLSProjectHandlerEngine.java:336)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.access$3(SLSProjectHandlerEngine.java:326)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine$1.execute(SLSProjectHandlerEngine.java:220)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine$2.runInWorkspace(SLSProjectHandlerEngine.java:250)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 567 2021-02-16 14:03:44.591
+!MESSAGE Failed to read project description file from location 'C:\Users\tijsv\OneDrive - Universiteit Antwerpen\UAsem6\Embedded\Sleutel\SimplicityStudio\Oef1_2\.project'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\tijsv\OneDrive - Universiteit Antwerpen\UAsem6\Embedded\Sleutel\SimplicityStudio\Oef1_2\.project (The system cannot find the path specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.eclipse.core.internal.resources.ProjectDescriptionReader.read(ProjectDescriptionReader.java:955)
+	at org.eclipse.core.internal.resources.Workspace.loadProjectDescription(Workspace.java:1920)
+	at com.silabs.ss.framework.ide.api.project.sls.core.creator.BaseCreateConvertProjectHandler.runImportSLSArchive(BaseCreateConvertProjectHandler.java:329)
+	at com.silabs.ss.framework.ide.api.project.sls.core.creator.BaseCreateConvertProjectHandler.createOrConvertProject(BaseCreateConvertProjectHandler.java:281)
+	at com.silabs.ss.framework.project.api.core.external.ImportProjectHandler.createOrConvertProject(ImportProjectHandler.java:82)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.createConvertProject(SLSProjectHandlerEngine.java:157)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.importProject(SLSProjectHandlerEngine.java:192)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.runImport(SLSProjectHandlerEngine.java:336)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine.access$3(SLSProjectHandlerEngine.java:326)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine$1.execute(SLSProjectHandlerEngine.java:220)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:108)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:130)
+	at com.silabs.ss.framework.ide.api.project.ui.util.SLSProjectHandlerEngine$2.runInWorkspace(SLSProjectHandlerEngine.java:250)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-02-16 14:04:12.703
+!MESSAGE Indexed 'Oef1' (5 sources, 85 headers) in 1,41 sec: 4.661 declarations; 8.475 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-02-16 14:04:43.915
+!MESSAGE Indexed 'Ex1' (8 sources, 91 headers) in 1,47 sec: 5.077 declarations; 11.955 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2021-02-16 14:05:25.817
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY org.eclipse.cdt.debug.edc 4 0 2021-02-16 14:05:30.435
+!MESSAGE Unknown context [rc.root.000440042548] is reported in suspended event. Make sure TCF agent has reported contextAdded event first.

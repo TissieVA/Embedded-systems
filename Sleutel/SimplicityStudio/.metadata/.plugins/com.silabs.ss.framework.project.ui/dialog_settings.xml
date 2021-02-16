@@ -3,11 +3,13 @@
 	<section name="com.silabs.ss.framework.ide.project.core.cdtMbsProjectType">
 		<item value="LINK" key="importOption"/>
 		<list key="fileLocationHistory">
+			<item value="C:\Users\tijsv\OneDrive - Universiteit Antwerpen\UAsem6\Embedded\Sleutel\SimplicityStudio\Ex1"/>
+			<item value="C:\Users\tijsv\OneDrive - Universiteit Antwerpen\UAsem6\Embedded\Sleutel\SimplicityStudio\Oef1"/>
 			<item value="C:\Users\tijsv\SimplicityStudio\v4_workspace\Ex1"/>
 			<item value="C:\Users\tijsv\SimplicityStudio\v4_workspace\Oef1"/>
 		</list>
 		<list key="fileLocations">
-			<item value="C:\Users\tijsv\SimplicityStudio\v4_workspace\Ex1"/>
+			<item value="C:\Users\tijsv\OneDrive - Universiteit Antwerpen\UAsem6\Embedded\Sleutel\SimplicityStudio\Ex1"/>
 		</list>
 	</section>
 </section>
