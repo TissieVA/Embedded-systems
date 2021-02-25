@@ -10733,9 +10733,9 @@
     <properties key="template.namespace" value="projectTemplate"/>
     <properties key="protocol.contributingProtocol" value="com.silabs.sdk.stack.super:2.7.8._310455041.com.silabs.sdk.exx32:5.9.8.0_-60569269"/>
     <properties key="core.title" value="32-bit MCU SDK 5.9.8.0"/>
-    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.super:2.7.8._310455041.cExeProject"/>
     <properties key="template.defaultName" value="emptyCProject"/>
     <properties key="template.allowsExistingLocation" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.super:2.7.8._310455041.cExeProject"/>
   </descriptors>
   <descriptors name="cppExeProject" label="Empty C++ Project" description="">
     <properties key="template.type" value="template"/>
@@ -10773,9 +10773,9 @@
     <properties key="template.namespace" value="projectTemplate"/>
     <properties key="protocol.contributingProtocol" value="com.silabs.sdk.stack.super:2.7.8._310455041.com.silabs.sdk.exx32:5.9.8.0_-60569269"/>
     <properties key="core.title" value="32-bit MCU SDK 5.9.8.0"/>
-    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.super:2.7.8._310455041.hardwareConfiguratorProject"/>
     <properties key="template.defaultName" value="EFM32HG322F64"/>
     <properties key="template.allowsExistingLocation" value="true"/>
+    <properties key="CACHED_ID_STRING" value="com.silabs.sdk.stack.super:2.7.8._310455041.hardwareConfiguratorProject"/>
   </descriptors>
   <descriptors name="staticLibProject" label="Empty C Project" description="">
     <properties key="template.type" value="template"/>

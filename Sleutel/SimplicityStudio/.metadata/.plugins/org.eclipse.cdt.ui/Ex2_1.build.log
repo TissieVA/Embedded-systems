@@ -1,14 +1,5 @@
-15:31:33 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+16:46:17 **** Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
 make -j4 all 
-Building file: ../src/1_interrupt_gpio.c
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/1_interrupt_gpio.d" -MT"src/1_interrupt_gpio.o" -o "src/1_interrupt_gpio.o" "../src/1_interrupt_gpio.c"
-../src/1_interrupt_gpio.c: In function 'main':
-../src/1_interrupt_gpio.c:146:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
-     EMU_EnterEM3(true);
-     ^~~~~~~~~~~~
-Finished building: ../src/1_interrupt_gpio.c
- 
 Building target: Ex2_1.axf
 Invoking: GNU ARM C Linker
 arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_1.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_1.map" --specs=nano.specs -o Ex2_1.axf "./BSP/bsp_stk_leds.o" "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./src/1_interrupt_gpio.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
@@ -49,5 +40,5 @@ Total             582862
 
  
 
-15:32:16 Build Finished (took 43s.68ms)
+16:46:22 Build Finished (took 4s.552ms)
 

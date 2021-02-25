@@ -2,3 +2,6 @@
 1614258180034	Delete resource 'SLSTK3400A_spaceinvaders'
 1614258254790	Delete resource 'Oef1'
 1614258887411	Delete resource 'SLSTK3400A_blink_2'
+1614264479270	Delete resource 'Ex2_2/src/1_interrupt_gpio.c'
+1614265297869	Delete resource 'Ex2_2/emlib/em_rtc.c'
+1614270166370	Delete resource 'Ex2_3/src/2_interrupt_timer.c'
