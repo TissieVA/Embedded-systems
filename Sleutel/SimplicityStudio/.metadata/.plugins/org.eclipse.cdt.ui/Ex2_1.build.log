@@ -1,6 +1,53 @@
-15:05:15 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+15:31:33 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
 make -j4 all 
-make: Nothing to be done for `all'.
+Building file: ../src/1_interrupt_gpio.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/1_interrupt_gpio.d" -MT"src/1_interrupt_gpio.o" -o "src/1_interrupt_gpio.o" "../src/1_interrupt_gpio.c"
+../src/1_interrupt_gpio.c: In function 'main':
+../src/1_interrupt_gpio.c:146:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
+     EMU_EnterEM3(true);
+     ^~~~~~~~~~~~
+Finished building: ../src/1_interrupt_gpio.c
+ 
+Building target: Ex2_1.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_1.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_1.map" --specs=nano.specs -o Ex2_1.axf "./BSP/bsp_stk_leds.o" "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./src/1_interrupt_gpio.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: Ex2_1.axf
+ 
+Building hex file: Ex2_1.hex
+arm-none-eabi-objcopy -O ihex "Ex2_1.axf" "Ex2_1.hex"
+ 
+Building bin file: Ex2_1.bin
+arm-none-eabi-objcopy -O binary "Ex2_1.axf" "Ex2_1.bin"
+ 
+Building s37 file: Ex2_1.s37
+arm-none-eabi-objcopy -O srec "Ex2_1.axf" "Ex2_1.s37"
+ 
+Running size tool
+arm-none-eabi-size "Ex2_1.axf" -A
+Ex2_1.axf  :
+section             size        addr
+.text               5524           0
+.ARM.exidx             8        5524
+.data                132   536870912
+.bss                  36   536871044
+.heap               1024   536871080
+.stack_dummy        1024   536871080
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        16872           0
+.debug_info        30417           0
+.debug_abbrev       4467           0
+.debug_aranges      1144           0
+.debug_str        503238           0
+.debug_loc          6344           0
+.debug_ranges       1016           0
+.debug_macro        7434           0
+.debug_frame        4016           0
+Total             582862
 
-15:05:19 Build Finished (took 3s.854ms)
+
+ 
+
+15:32:16 Build Finished (took 43s.68ms)
 

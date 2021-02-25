@@ -1,10 +1,58 @@
-14:40:03 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+15:25:24 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+make -j4 all 
+Building file: ../src/1_interrupt_gpio.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/1_interrupt_gpio.d" -MT"src/1_interrupt_gpio.o" -o "src/1_interrupt_gpio.o" "../src/1_interrupt_gpio.c"
+../src/1_interrupt_gpio.c: In function 'GPIO_IRQHandler':
+../src/1_interrupt_gpio.c:66:3: error: 'enableLed' undeclared (first use in this function); did you mean 'enableLed1'?
+   enableLed = !enableLed;
+   ^~~~~~~~~
+   enableLed1
+../src/1_interrupt_gpio.c:66:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/1_interrupt_gpio.c:71:20: error: 'LED_PORT' undeclared (first use in this function); did you mean 'LED1_PORT'?
+     GPIO_PinOutSet(LED_PORT, LED_PIN);
+                    ^~~~~~~~
+                    LED1_PORT
+../src/1_interrupt_gpio.c:71:30: error: 'LED_PIN' undeclared (first use in this function); did you mean 'LED1_PIN'?
+     GPIO_PinOutSet(LED_PORT, LED_PIN);
+                              ^~~~~~~
+                              LED1_PIN
+../src/1_interrupt_gpio.c: In function 'main':
+../src/1_interrupt_gpio.c:151:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
+     EMU_EnterEM3(true);
+     ^~~~~~~~~~~~
+make: *** [src/1_interrupt_gpio.o] Error 1
+15:27:12 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+make -j4 all 
+Building file: ../src/1_interrupt_gpio.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/1_interrupt_gpio.d" -MT"src/1_interrupt_gpio.o" -o "src/1_interrupt_gpio.o" "../src/1_interrupt_gpio.c"
+../src/1_interrupt_gpio.c: In function 'GPIO_IRQHandler':
+../src/1_interrupt_gpio.c:66:3: error: 'enableLed' undeclared (first use in this function); did you mean 'enableLed1'?
+   enableLed = !enableLed;
+   ^~~~~~~~~
+   enableLed1
+../src/1_interrupt_gpio.c:66:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/1_interrupt_gpio.c:71:20: error: 'LED_PORT' undeclared (first use in this function); did you mean 'LED1_PORT'?
+     GPIO_PinOutSet(LED_PORT, LED_PIN);
+                    ^~~~~~~~
+                    LED1_PORT
+../src/1_interrupt_gpio.c:71:30: error: 'LED_PIN' undeclared (first use in this function); did you mean 'LED1_PIN'?
+     GPIO_PinOutSet(LED_PORT, LED_PIN);
+                              ^~~~~~~
+                              LED1_PIN
+../src/1_interrupt_gpio.c: In function 'main':
+../src/1_interrupt_gpio.c:174:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
+     EMU_EnterEM3(true);
+     ^~~~~~~~~~~~
+make: *** [src/1_interrupt_gpio.o] Error 1
+15:27:45 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
 make -j4 all 
 Building file: ../src/1_interrupt_gpio.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/1_interrupt_gpio.d" -MT"src/1_interrupt_gpio.o" -o "src/1_interrupt_gpio.o" "../src/1_interrupt_gpio.c"
 ../src/1_interrupt_gpio.c: In function 'main':
-../src/1_interrupt_gpio.c:129:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
+../src/1_interrupt_gpio.c:145:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
      EMU_EnterEM3(true);
      ^~~~~~~~~~~~
 Finished building: ../src/1_interrupt_gpio.c
@@ -27,40 +75,34 @@ Running size tool
 arm-none-eabi-size "Ex2_1.axf" -A
 Ex2_1.axf  :
 section             size        addr
-.text               5428           0
-.ARM.exidx             8        5428
+.text               5508           0
+.ARM.exidx             8        5508
 .data                132   536870912
 .bss                  36   536871044
 .heap               1024   536871080
 .stack_dummy        1024   536871080
 .ARM.attributes       40           0
 .comment             126           0
-.debug_line        16883           0
-.debug_info        30421           0
+.debug_line        16871           0
+.debug_info        30417           0
 .debug_abbrev       4467           0
-.debug_aranges      1152           0
-.debug_str        503271           0
-.debug_loc          6388           0
-.debug_ranges       1024           0
-.debug_macro        7410           0
-.debug_frame        4044           0
-Total             582878
+.debug_aranges      1144           0
+.debug_str        503238           0
+.debug_loc          6344           0
+.debug_ranges       1016           0
+.debug_macro        7434           0
+.debug_frame        4016           0
+Total             582845
 
 
  
-14:41:52 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
-make -j4 all 
-make: Nothing to be done for `all'.
-14:42:05 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
-make -j4 all 
-make: Nothing to be done for `all'.
-15:05:09 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+15:31:33 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
 make -j4 all 
 Building file: ../src/1_interrupt_gpio.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/1_interrupt_gpio.d" -MT"src/1_interrupt_gpio.o" -o "src/1_interrupt_gpio.o" "../src/1_interrupt_gpio.c"
 ../src/1_interrupt_gpio.c: In function 'main':
-../src/1_interrupt_gpio.c:128:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
+../src/1_interrupt_gpio.c:146:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
      EMU_EnterEM3(true);
      ^~~~~~~~~~~~
 Finished building: ../src/1_interrupt_gpio.c
@@ -83,27 +125,24 @@ Running size tool
 arm-none-eabi-size "Ex2_1.axf" -A
 Ex2_1.axf  :
 section             size        addr
-.text               5428           0
-.ARM.exidx             8        5428
+.text               5524           0
+.ARM.exidx             8        5524
 .data                132   536870912
 .bss                  36   536871044
 .heap               1024   536871080
 .stack_dummy        1024   536871080
 .ARM.attributes       40           0
 .comment             126           0
-.debug_line        16883           0
-.debug_info        30421           0
+.debug_line        16872           0
+.debug_info        30417           0
 .debug_abbrev       4467           0
-.debug_aranges      1152           0
-.debug_str        503271           0
-.debug_loc          6388           0
-.debug_ranges       1024           0
-.debug_macro        7410           0
-.debug_frame        4044           0
-Total             582878
+.debug_aranges      1144           0
+.debug_str        503238           0
+.debug_loc          6344           0
+.debug_ranges       1016           0
+.debug_macro        7434           0
+.debug_frame        4016           0
+Total             582862
 
 
  
-15:05:15 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
-make -j4 all 
-make: Nothing to be done for `all'.

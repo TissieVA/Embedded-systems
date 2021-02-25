@@ -44,16 +44,43 @@
 #define LED1_PIN     5
 
 bool enableLed0 = 0;
-bool enableLed1 = 0;
+bool enableLed1 =0;
 
+/**************************************************************************//**
+ * @brief GPIO Handler
+ * Interrupt Service Routine 
+ *****************************************************************************/
 
+void GPIO_IRQHandler(void)
+{
+  /* Clear flag for Push Button 0 interrupt. The interrupt is called as
+   * long as the interrupt flag is not cleared, so failing to do so here would
+   * lock the program at the first interrupt.
+   *
+   * All the ports share a total of 16 interrupts - one per pin number - i.e.
+   * pin 9 of port A and D share one interrupt, so to clear interrupts produced by
+   * either one of them we have to clear bit 9 */
+  GPIO_IntClear(1 << PB0_PIN);
+
+  /* Toggle value */
+  enableLed = !enableLed;
+
+  if (enableLed)
+  {
+    /* Turn on LED */
+    GPIO_PinOutSet(LED_PORT, LED_PIN);
+  }
+  else
+  {
+    /* Turn off LED )*/
+    GPIO_PinOutClear(LED_PORT, LED_PIN);
+  }
+}
 
 /**************************************************************************//**
  * @brief GPIO_EVEN Handler
  * Interrupt Service Routine for even GPIO pins
  *****************************************************************************/
-
-
 void GPIO_EVEN_IRQHandler(void)
 {
 	GPIO_IntClear(1 << PB1_PIN);
@@ -140,7 +167,6 @@ int main(void)
   /* Configure PD8 (Push Button 0) interrupt on falling edge, i.e. when it is
    * pressed, and rising edge, i.e. when it is released. */
   GPIO_IntConfig(PB0_PORT, PB0_PIN, true, true, true);
-  GPIO_IntConfig(PB1_PORT, PB1_PIN, true, true, true);
 
   while (1)
   {

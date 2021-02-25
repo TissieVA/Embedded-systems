@@ -31,46 +31,50 @@
 #define PB0_PORT    gpioPortC
 #define PB0_PIN     9
 
-/* Defines for Push Button 1 */
-#define PB1_PORT    gpioPortC
-#define PB1_PIN     10
+/* Defines for the LED */
+#define LED_PORT    gpioPortF
+#define LED_PIN     4
 
-/* Defines for the LED 0 */
-#define LED0_PORT    gpioPortF
-#define LED0_PIN     4
+bool enableLed = 0;
 
-/* Defines for the LED 1 */
-#define LED1_PORT    gpioPortF
-#define LED1_PIN     5
+/**************************************************************************//**
+ * @brief GPIO Handler
+ * Interrupt Service Routine 
+ *****************************************************************************/
 
-bool enableLed0 = 0;
-bool enableLed1 = 0;
+void GPIO_IRQHandler(void)
+{
+  /* Clear flag for Push Button 0 interrupt. The interrupt is called as
+   * long as the interrupt flag is not cleared, so failing to do so here would
+   * lock the program at the first interrupt.
+   *
+   * All the ports share a total of 16 interrupts - one per pin number - i.e.
+   * pin 9 of port A and D share one interrupt, so to clear interrupts produced by
+   * either one of them we have to clear bit 9 */
+  GPIO_IntClear(1 << PB0_PIN);
 
+  /* Toggle value */
+  enableLed = !enableLed;
 
+  if (enableLed)
+  {
+    /* Turn off LED */
+    GPIO_PinOutSet(LED_PORT, LED_PIN);
+  }
+  else
+  {
+    /* Turn off LED )*/
+    GPIO_PinOutClear(LED_PORT, LED_PIN);
+  }
+}
 
 /**************************************************************************//**
  * @brief GPIO_EVEN Handler
  * Interrupt Service Routine for even GPIO pins
  *****************************************************************************/
-
-
 void GPIO_EVEN_IRQHandler(void)
 {
-	GPIO_IntClear(1 << PB1_PIN);
-
-		  /* Toggle value */
-		  enableLed1 = !enableLed1;
-
-		  if (enableLed1)
-		  {
-		    /* Turn on LED */
-		    GPIO_PinOutSet(LED1_PORT, LED1_PIN);
-		  }
-		  else
-		  {
-		    /* Turn off LED )*/
-		    GPIO_PinOutClear(LED1_PORT, LED1_PIN);
-		  }
+    GPIO_IRQHandler();
 }
 
 /**************************************************************************//**
@@ -79,21 +83,7 @@ void GPIO_EVEN_IRQHandler(void)
  *****************************************************************************/
 void GPIO_ODD_IRQHandler(void)
 {
-	GPIO_IntClear(1 << PB0_PIN);
-
-	  /* Toggle value */
-	  enableLed0 = !enableLed0;
-
-	  if (enableLed0)
-	  {
-	    /* Turn on LED */
-	    GPIO_PinOutSet(LED0_PORT, LED0_PIN);
-	  }
-	  else
-	  {
-	    /* Turn off LED )*/
-	    GPIO_PinOutClear(LED0_PORT, LED0_PIN);
-	  }
+    GPIO_IRQHandler();
 }
 
 
@@ -113,17 +103,9 @@ int main(void)
    * so that we can read its value. */
   GPIO_PinModeSet(PB0_PORT, PB0_PIN, gpioModeInput, 1);
 
-  /* Configure LED 0 as a push pull, so that we can
+  /* Configure LED as a push pull, so that we can
    * set its value - 1 to turn on, 0 to turn off */
-  GPIO_PinModeSet(LED0_PORT, LED0_PIN, gpioModePushPull, 0);
-
-  /* Configure push button 1 as an input,
-     * so that we can read its value. */
-    GPIO_PinModeSet(PB1_PORT, PB1_PIN, gpioModeInput, 1);
-
-    /* Configure LED 1 as a push pull, so that we can
-     * set its value - 1 to turn on, 0 to turn off */
-    GPIO_PinModeSet(LED1_PORT, LED1_PIN, gpioModePushPull, 0);
+  GPIO_PinModeSet(LED_PORT, LED_PIN, gpioModePushPull, 0);
 
   /* Enable GPIO_ODD interrupt vector in NVIC. We want Push Button 0 to
    * send an interrupt when pressed. GPIO interrupts are handled by either
@@ -133,14 +115,12 @@ int main(void)
   
 
   NVIC_EnableIRQ(GPIO_ODD_IRQn);
-  NVIC_EnableIRQ(GPIO_EVEN_IRQn);
 
 
 
   /* Configure PD8 (Push Button 0) interrupt on falling edge, i.e. when it is
    * pressed, and rising edge, i.e. when it is released. */
   GPIO_IntConfig(PB0_PORT, PB0_PIN, true, true, true);
-  GPIO_IntConfig(PB1_PORT, PB1_PIN, true, true, true);
 
   while (1)
   {

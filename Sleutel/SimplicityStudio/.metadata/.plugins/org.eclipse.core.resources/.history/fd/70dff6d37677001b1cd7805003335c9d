@@ -52,8 +52,6 @@ bool enableLed1 = 0;
  * @brief GPIO_EVEN Handler
  * Interrupt Service Routine for even GPIO pins
  *****************************************************************************/
-
-
 void GPIO_EVEN_IRQHandler(void)
 {
 	GPIO_IntClear(1 << PB1_PIN);
