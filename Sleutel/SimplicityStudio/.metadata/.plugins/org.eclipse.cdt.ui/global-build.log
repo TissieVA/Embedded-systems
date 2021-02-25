@@ -1,128 +1,109 @@
-14:05:17 **** Clean-only build of configuration GNU ARM v7.2.1 - Debug for project Ex1 ****
-make -j4 clean 
-rm -rf  ./src/Ex1.o  ./emlib/em_assert.o ./emlib/em_cmu.o ./emlib/em_core.o ./emlib/em_emu.o ./emlib/em_gpio.o  ./CMSIS/EFM32HG/startup_efm32hg.o ./CMSIS/EFM32HG/system_efm32hg.o  ./BSP/bsp_stk_leds.o  ./src/Ex1.d  ./emlib/em_assert.d ./emlib/em_cmu.d ./emlib/em_core.d ./emlib/em_emu.d ./emlib/em_gpio.d  ./CMSIS/EFM32HG/system_efm32hg.d  ./BSP/bsp_stk_leds.d  Ex1.axf
- 
-14:05:19 **** Build of configuration GNU ARM v7.2.1 - Debug for project Ex1 ****
+14:40:03 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
 make -j4 all 
-Building file: ../src/Ex1.c
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_assert.c
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_core.c
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_cmu.c
+Building file: ../src/1_interrupt_gpio.c
 Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/Ex1.d" -MT"src/Ex1.o" -o "src/Ex1.o" "../src/Ex1.c"
-Invoking: GNU ARM C Compiler
-Invoking: GNU ARM C Compiler
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_assert.d" -MT"emlib/em_assert.o" -o "emlib/em_assert.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_assert.c"
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_core.d" -MT"emlib/em_core.o" -o "emlib/em_core.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_core.c"
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_cmu.d" -MT"emlib/em_cmu.o" -o "emlib/em_cmu.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_cmu.c"
-../src/Ex1.c: In function 'main':
-../src/Ex1.c:69:27: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
-   int32_t *EightBit_ptr = &EightBit;
-                           ^
-../src/Ex1.c:71:29: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
-   int32_t *SixteenBit_ptr = &SixteenBit;
-                             ^
-../src/Ex1.c:78:21: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
-   uint32_t *A_ptr = &A;
-                     ^
-../src/Ex1.c:93:5: warning: implicit declaration of function 'LedController' [-Wimplicit-function-declaration]
-     LedController(0, true);
-     ^~~~~~~~~~~~~
-../src/Ex1.c:81:8: warning: unused variable 'onOff' [-Wunused-variable]
-   bool onOff = true;
-        ^~~~~
-../src/Ex1.c:78:13: warning: unused variable 'A_ptr' [-Wunused-variable]
-   uint32_t *A_ptr = &A;
-             ^~~~~
-../src/Ex1.c:73:13: warning: unused variable 'ThritytwoBit_ptr' [-Wunused-variable]
-   uint32_t *ThritytwoBit_ptr = &ThritytwoBit;
-             ^~~~~~~~~~~~~~~~
-../src/Ex1.c:71:12: warning: unused variable 'SixteenBit_ptr' [-Wunused-variable]
-   int32_t *SixteenBit_ptr = &SixteenBit;
-            ^~~~~~~~~~~~~~
-../src/Ex1.c:69:12: warning: unused variable 'EightBit_ptr' [-Wunused-variable]
-   int32_t *EightBit_ptr = &EightBit;
-            ^~~~~~~~~~~~
-../src/Ex1.c: At top level:
-../src/Ex1.c:104:6: warning: conflicting types for 'LedController'
- void LedController(int led, bool onOff)
-      ^~~~~~~~~~~~~
-../src/Ex1.c:93:5: note: previous implicit declaration of 'LedController' was here
-     LedController(0, true);
-     ^~~~~~~~~~~~~
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_assert.c
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_core.c
-Finished building: ../src/Ex1.c
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/1_interrupt_gpio.d" -MT"src/1_interrupt_gpio.o" -o "src/1_interrupt_gpio.o" "../src/1_interrupt_gpio.c"
+../src/1_interrupt_gpio.c: In function 'main':
+../src/1_interrupt_gpio.c:129:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
+     EMU_EnterEM3(true);
+     ^~~~~~~~~~~~
+Finished building: ../src/1_interrupt_gpio.c
  
- 
- 
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_emu.c
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_gpio.c
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/Device/SiliconLabs/EFM32HG/Source/GCC/startup_efm32hg.S
-Invoking: GNU ARM C Compiler
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_cmu.c
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_emu.d" -MT"emlib/em_emu.o" -o "emlib/em_emu.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_emu.c"
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_gpio.d" -MT"emlib/em_gpio.o" -o "emlib/em_gpio.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_gpio.c"
- 
-Invoking: GNU ARM Assembler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -c -x assembler-with-cpp -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" '-DEFM32HG322F64=1' -o "CMSIS/EFM32HG/startup_efm32hg.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/Device/SiliconLabs/EFM32HG/Source/GCC/startup_efm32hg.S"
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/Device/SiliconLabs/EFM32HG/Source/system_efm32hg.c
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"CMSIS/EFM32HG/system_efm32hg.d" -MT"CMSIS/EFM32HG/system_efm32hg.o" -o "CMSIS/EFM32HG/system_efm32hg.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/Device/SiliconLabs/EFM32HG/Source/system_efm32hg.c"
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/Device/SiliconLabs/EFM32HG/Source/GCC/startup_efm32hg.S
- 
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/hardware/kit/common/bsp/bsp_stk_leds.c
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"BSP/bsp_stk_leds.d" -MT"BSP/bsp_stk_leds.o" -o "BSP/bsp_stk_leds.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/hardware/kit/common/bsp/bsp_stk_leds.c"
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_emu.c
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_gpio.c
- 
- 
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/Device/SiliconLabs/EFM32HG/Source/system_efm32hg.c
- 
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/hardware/kit/common/bsp/bsp_stk_leds.c
- 
-Building target: Ex1.axf
+Building target: Ex2_1.axf
 Invoking: GNU ARM C Linker
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex1.ld" -Xlinker --gc-sections -Xlinker -Map="Ex1.map" --specs=nano.specs -o Ex1.axf "./BSP/bsp_stk_leds.o" "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./src/Ex1.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
-Finished building target: Ex1.axf
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_1.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_1.map" --specs=nano.specs -o Ex2_1.axf "./BSP/bsp_stk_leds.o" "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./src/1_interrupt_gpio.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: Ex2_1.axf
  
-Building hex file: Ex1.hex
-arm-none-eabi-objcopy -O ihex "Ex1.axf" "Ex1.hex"
+Building hex file: Ex2_1.hex
+arm-none-eabi-objcopy -O ihex "Ex2_1.axf" "Ex2_1.hex"
  
-Building bin file: Ex1.bin
-arm-none-eabi-objcopy -O binary "Ex1.axf" "Ex1.bin"
+Building bin file: Ex2_1.bin
+arm-none-eabi-objcopy -O binary "Ex2_1.axf" "Ex2_1.bin"
  
-Building s37 file: Ex1.s37
-arm-none-eabi-objcopy -O srec "Ex1.axf" "Ex1.s37"
+Building s37 file: Ex2_1.s37
+arm-none-eabi-objcopy -O srec "Ex2_1.axf" "Ex2_1.s37"
  
 Running size tool
-arm-none-eabi-size "Ex1.axf" -A
-Ex1.axf  :
+arm-none-eabi-size "Ex2_1.axf" -A
+Ex2_1.axf  :
 section             size        addr
-.text               2676           0
-.ARM.exidx             8        2676
-.data                104   536870912
-.bss                  28   536871016
-.heap               1024   536871048
-.stack_dummy        1024   536871048
+.text               5428           0
+.ARM.exidx             8        5428
+.data                132   536870912
+.bss                  36   536871044
+.heap               1024   536871080
+.stack_dummy        1024   536871080
 .ARM.attributes       40           0
 .comment             126           0
-.debug_line        11906           0
-.debug_info        20242           0
-.debug_abbrev       2894           0
-.debug_aranges       720           0
-.debug_str        499439           0
-.debug_loc          3772           0
-.debug_ranges        608           0
-.debug_macro        3879           0
-.debug_frame        2436           0
-Total             550926
+.debug_line        16883           0
+.debug_info        30421           0
+.debug_abbrev       4467           0
+.debug_aranges      1152           0
+.debug_str        503271           0
+.debug_loc          6388           0
+.debug_ranges       1024           0
+.debug_macro        7410           0
+.debug_frame        4044           0
+Total             582878
 
 
  
-14:05:40 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex1 ****
+14:41:52 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+make -j4 all 
+make: Nothing to be done for `all'.
+14:42:05 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+make -j4 all 
+make: Nothing to be done for `all'.
+15:05:09 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
+make -j4 all 
+Building file: ../src/1_interrupt_gpio.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/1_interrupt_gpio.d" -MT"src/1_interrupt_gpio.o" -o "src/1_interrupt_gpio.o" "../src/1_interrupt_gpio.c"
+../src/1_interrupt_gpio.c: In function 'main':
+../src/1_interrupt_gpio.c:128:5: warning: implicit declaration of function 'EMU_EnterEM3' [-Wimplicit-function-declaration]
+     EMU_EnterEM3(true);
+     ^~~~~~~~~~~~
+Finished building: ../src/1_interrupt_gpio.c
+ 
+Building target: Ex2_1.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_1.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_1.map" --specs=nano.specs -o Ex2_1.axf "./BSP/bsp_stk_leds.o" "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_system.o" "./src/1_interrupt_gpio.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: Ex2_1.axf
+ 
+Building hex file: Ex2_1.hex
+arm-none-eabi-objcopy -O ihex "Ex2_1.axf" "Ex2_1.hex"
+ 
+Building bin file: Ex2_1.bin
+arm-none-eabi-objcopy -O binary "Ex2_1.axf" "Ex2_1.bin"
+ 
+Building s37 file: Ex2_1.s37
+arm-none-eabi-objcopy -O srec "Ex2_1.axf" "Ex2_1.s37"
+ 
+Running size tool
+arm-none-eabi-size "Ex2_1.axf" -A
+Ex2_1.axf  :
+section             size        addr
+.text               5428           0
+.ARM.exidx             8        5428
+.data                132   536870912
+.bss                  36   536871044
+.heap               1024   536871080
+.stack_dummy        1024   536871080
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        16883           0
+.debug_info        30421           0
+.debug_abbrev       4467           0
+.debug_aranges      1152           0
+.debug_str        503271           0
+.debug_loc          6388           0
+.debug_ranges       1024           0
+.debug_macro        7410           0
+.debug_frame        4044           0
+Total             582878
+
+
+ 
+15:05:15 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_1 ****
 make -j4 all 
 make: Nothing to be done for `all'.

@@ -1,0 +1,54 @@
+<?xml version ="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\1_interrupt_button_TG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\1_interrupt_button_GG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\2_interrupt_timer_TG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\2_interrupt_timer_GG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\3_stopwatch_TG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\3_stopwatch_GG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\4_dma_auto_TG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\4_dma_auto_GG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\5_dma_basic_TG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\5_dma_basic_GG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\6_prs_gpio_timer_TG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\6_prs_gpio_timer_GG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\7_exercise_1_TG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\7_exercise_1_GG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\8_exercise_2_TG.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\8_exercise_2_GG.ewp</path>
+  </project>
+
+  <batchBuild/>
+</workspace>

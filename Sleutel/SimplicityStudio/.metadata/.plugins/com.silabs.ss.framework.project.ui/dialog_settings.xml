@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="com.silabs.ss.framework.ide.project.core.cdtMbsProjectType">
+		<item value="true" key="filterTemplatesByPartSdk"/>
 		<item value="LINK" key="importOption"/>
+		<item value="true" key="filterTemplatesByToolchain"/>
 		<list key="fileLocationHistory">
 			<item value="C:\Users\tijsv\OneDrive - Universiteit Antwerpen\UAsem6\Embedded\Sleutel\SimplicityStudio\Ex1"/>
 			<item value="C:\Users\tijsv\OneDrive - Universiteit Antwerpen\UAsem6\Embedded\Sleutel\SimplicityStudio\Oef1"/>

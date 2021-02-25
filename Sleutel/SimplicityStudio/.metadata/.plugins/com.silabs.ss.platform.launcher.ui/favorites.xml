@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_92" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <string>Data Sheets</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.favorites.Favorite">
+      <void property="URI">
+       <object class="java.net.URI">
+        <string>asset://aem/www.silabs.com/documents/public/data-sheets/efm32hg-datasheet.pdf</string>
+       </object>
+      </void>
+      <void property="category">
+       <string>Data Sheets</string>
+      </void>
+      <void property="description">
+       <string>Description is unavailable</string>
+      </void>
+      <void property="id">
+       <string>asset://aem/www.silabs.com/documents/public/data-sheets/efm32hg-datasheet.pdf</string>
+      </void>
+      <void property="text">
+       <string>EFM32HG Data Sheet</string>
+      </void>
+      <void property="toolTipText">
+       <string>Description is unavailable</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>User&apos;s Guides</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.silabs.ss.platform.internal.launcher.ui.favorites.Favorite">
+      <void property="URI">
+       <object class="java.net.URI">
+        <string>asset://hwtools/kits/EFM32HG-SLSTK3400/t0037_stk3400_user_manual.pdf</string>
+       </object>
+      </void>
+      <void property="category">
+       <string>User&apos;s Guides</string>
+      </void>
+      <void property="description">
+       <string>Description is unavailable</string>
+      </void>
+      <void property="id">
+       <string>t0037_stk3400_user_manual.pdf</string>
+      </void>
+      <void property="text">
+       <string>UG255: EFM32 Happy Gecko Starter Kit User&apos;s Guide</string>
+      </void>
+      <void property="toolTipText">
+       <string>/hwtools/kits/EFM32HG-SLSTK3400/t0037_stk3400_user_manual.pdf</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
