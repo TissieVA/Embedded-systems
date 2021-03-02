@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="com.silabs.ss.framework.ide.project.core.cdtMbsProjectType">
+		<item value="com.silabs.ss.framework.ide.project.ui.emptyCProjectWizard" key="projectTypeId"/>
+		<item value="LINK_LIBRARIES" key="settingImportModeOption"/>
 		<item value="true" key="filterTemplatesByPartSdk"/>
 		<item value="LINK" key="importOption"/>
 		<item value="true" key="filterTemplatesByToolchain"/>

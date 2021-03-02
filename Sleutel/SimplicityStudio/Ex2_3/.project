@@ -31,36 +31,6 @@
 			<locationURI>STUDIO_SDK_LOC/hardware/kit/common/bsp/bsp_stk_leds.c</locationURI>
 		</link>
 		<link>
-			<name>emlib/em_assert.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_assert.c</locationURI>
-		</link>
-		<link>
-			<name>emlib/em_cmu.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_cmu.c</locationURI>
-		</link>
-		<link>
-			<name>emlib/em_core.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_core.c</locationURI>
-		</link>
-		<link>
-			<name>emlib/em_emu.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_emu.c</locationURI>
-		</link>
-		<link>
-			<name>emlib/em_gpio.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_gpio.c</locationURI>
-		</link>
-		<link>
-			<name>emlib/em_system.c</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_system.c</locationURI>
-		</link>
-		<link>
 			<name>CMSIS/EFM32HG/startup_gcc_efm32hg.s</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/Device/SiliconLabs/EFM32HG/Source/GCC/startup_efm32hg.S</locationURI>

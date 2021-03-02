@@ -1,0 +1,33 @@
+version=1
+000440042548 {
+  partName=efm32hg322f64
+  deviceLabel=J-Link Silicon Labs (440042548)
+  serialNumber=440042548
+  AdapterType=JLink
+  adapterLabel=J-Link Silicon Labs
+  adapterId=2012A
+  adapterName=BRD2012A Rev. B01
+  adapterDescription=EFM32 Happy Gecko Starter Kit Board
+  adapterRevision=B01
+  adapterSerialNumber=152200659
+  adapterDate=0/0/0
+  adapterFirmware=0v15p3b761
+  adapterFpga=15v15p255b65535
+  adapterInBootloader=no
+  supportedDebugModes=OFF,MCU,IN,OUT
+  debugMode=MCU
+  inferPart=yes
+  supportsAEM=yes
+  supportsVCom=yes
+  supportsEmucom=yes
+  supportsIP=no
+  boardCount=1
+  boardId[0]=2012A
+  boardName[0]=BRD2012A Rev. B01
+  boardDescription[0]=EFM32 Happy Gecko Starter Kit Board
+  boardRevision[0]=B01
+  boardSerial[0]=152200659
+  boardDate[0]=2015/6/2
+  inferPart[0]=yes
+  programName=000440042548_SLSTK3400A_emlcd_2.axf
+}

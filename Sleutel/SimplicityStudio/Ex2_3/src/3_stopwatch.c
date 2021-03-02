@@ -14,16 +14,20 @@
  * terms of that agreement.
  *
  ******************************************************************************/
-#include <stdint.h>
-#include <stdbool.h>
+#include <stdio.h>
+
 #include "em_device.h"
 #include "em_chip.h"
 #include "em_cmu.h"
 #include "em_emu.h"
 #include "em_gpio.h"
-#include "em_lcd.h"
-#include "segmentlcd.h"
+#include "em_pcnt.h"
 #include "em_rtc.h"
+
+#include "display.h"
+#include "textdisplay.h"
+#include "retargettextdisplay.h"
+#include "em4config.h"
 
 
 /* Defines for the RTC */
@@ -53,6 +57,7 @@ bool enableGecko = false;
 
 
 
+
 /**************************************************************************//**
  * @brief GPIO Interrupt Handler
  *****************************************************************************/
@@ -65,7 +70,7 @@ void GPIO_IRQHandler_1(void)
   if (enableCount)
   {
     enableCount = false;
-    SegmentLCD_Write("Pause");
+    printf("Pause");
   }
   else
   {
@@ -74,7 +79,7 @@ void GPIO_IRQHandler_1(void)
      * be increased. */
     RTC_IRQHandler();
 
-    SegmentLCD_Write("Start");
+    printf("Start");
     enableCount = true;
   }
 }
@@ -91,10 +96,10 @@ void GPIO_IRQHandler_2(void)
   if (interrupt_source & (1 << PB1_PIN))
   {
     GPIO_IntClear(1 << PB1_PIN);
-    SegmentLCD_Write("Clear");
+    printf("Clear");
     time        = 0;
     enableCount = false;
-    SegmentLCD_Number(time);
+    printf(time);
   }
 
   /* Pin D3 - channel 3 => 2^3 */
@@ -112,7 +117,7 @@ void GPIO_IRQHandler_2(void)
     else
       enableGecko = true;
 
-    SegmentLCD_Symbol(LCD_SYMBOL_GECKO, enableGecko);
+    printf("GECKO!!!");
 
     /* This dummy loop is intended to illustrate the different levels of
      * priority. The timer will continue to update the LCD display, but
@@ -132,11 +137,10 @@ void GPIO_IRQHandler_2(void)
  *****************************************************************************/
 void GPIO_EVEN_IRQHandler(void){
   
-#if defined(_EFM32_GIANT_FAMILY)
-  GPIO_IRQHandler_2();
-#else
+
   GPIO_IRQHandler_1();
-#endif
+
+
   
 }
 
@@ -145,11 +149,9 @@ void GPIO_EVEN_IRQHandler(void){
  *****************************************************************************/
 void GPIO_ODD_IRQHandler(void){
   
-#if defined(_EFM32_GIANT_FAMILY)
-  GPIO_IRQHandler_1();
-#else
+
   GPIO_IRQHandler_2();
-#endif
+
   
 }
 
@@ -181,7 +183,7 @@ void RTC_IRQHandler(void)
  *****************************************************************************/
 void PendSV_Handler(void)
 {
-  SegmentLCD_Number(time);
+	printf(time);
 }
 
 /**************************************************************************//**
@@ -246,13 +248,10 @@ void initGPIO()
   NVIC_EnableIRQ(PendSV_IRQn);
 
   /* Set priorities - 0 is the highest, 7 is the lowest */
-#if defined(_EFM32_GIANT_FAMILY)
+
   NVIC_SetPriority(GPIO_ODD_IRQn, 2);
   NVIC_SetPriority(GPIO_EVEN_IRQn, 1);
-#else
-  NVIC_SetPriority(GPIO_EVEN_IRQn, 2);
-  NVIC_SetPriority(GPIO_ODD_IRQn, 1);
-#endif
+
   NVIC_SetPriority(RTC_IRQn, 0);
   NVIC_SetPriority(PendSV_IRQn, 3);
 
@@ -271,14 +270,14 @@ int main(void)
   /* Initialize chip */
   CHIP_Init();
 
-  SegmentLCD_Init(true);
+
 
   initRTC();
   initGPIO();
-
+  DISPLAY_Init();
   /* Initial LCD content */
-  SegmentLCD_Write("Welcome");
-  SegmentLCD_Number(0);
+  printf("Welcome");
+  printf(0);
 
   while (1)
   {

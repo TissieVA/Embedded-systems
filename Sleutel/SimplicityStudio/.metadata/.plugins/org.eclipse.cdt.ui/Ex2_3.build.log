@@ -1,20 +1,15 @@
-17:34:47 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_3 ****
+19:43:16 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_3 ****
 make -j4 all 
 Building file: ../src/3_stopwatch.c
-Building file: ../emlib/em_lcd.c
 Invoking: GNU ARM C Compiler
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_lcd.d" -MT"emlib/em_lcd.o" -o "emlib/em_lcd.o" "../emlib/em_lcd.c"
 arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/3_stopwatch.d" -MT"src/3_stopwatch.o" -o "src/3_stopwatch.o" "../src/3_stopwatch.c"
-In file included from ../src/3_stopwatch.c:25:0:
-c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v2.7\hardware\kit\common\drivers\segmentlcd.h:34:10: fatal error: segmentlcdconfig.h: No such file or directory
- #include "segmentlcdconfig.h"
-          ^~~~~~~~~~~~~~~~~~~~
+In file included from c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v2.7\hardware\kit\common\drivers\display.h:36:0,
+                 from ../src/3_stopwatch.c:27:
+c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v2.7\hardware\kit\common\drivers\emstatus.h:35:10: fatal error: em_types.h: No such file or directory
+ #include "em_types.h"          /* typedef uint32_t EMSTATUS; */
+          ^~~~~~~~~~~~
 compilation terminated.
 make: *** [src/3_stopwatch.o] Error 1
-make: *** Waiting for unfinished jobs....
-Finished building: ../emlib/em_lcd.c
- 
 
-17:34:52 Build Finished (took 5s.344ms)
+19:43:18 Build Finished (took 2s.324ms)
 
