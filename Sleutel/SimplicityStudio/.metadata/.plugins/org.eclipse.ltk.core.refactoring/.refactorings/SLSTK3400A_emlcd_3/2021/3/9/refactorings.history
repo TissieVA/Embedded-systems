@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SLSTK3400A_emlcd_3/src/emlcd.c&apos; to &apos;emlcd_Working.c&apos;" description="Rename resource &apos;emlcd.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/emlcd.c" name="emlcd_Working.c" stamp="1614780787774" updateReferences="true"/>
+</session>

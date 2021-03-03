@@ -1,29 +1,772 @@
-19:57:06 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_4 ****
+15:20:30 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
 make -j4 all 
-Building file: ../src/4_dma_auto.c
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_emu.c
-Building file: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_gpio.c
-Building file: ../emlib/em_pcnt.c
+Building file: ../src/emlcd_Working.c
 Invoking: GNU ARM C Compiler
-Invoking: GNU ARM C Compiler
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.7\util\silicon_labs\silabs_core" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/4_dma_auto.d" -MT"src/4_dma_auto.o" -o "src/4_dma_auto.o" "../src/4_dma_auto.c"
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.7\util\silicon_labs\silabs_core" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_emu.d" -MT"emlib/em_emu.o" -o "emlib/em_emu.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_emu.c"
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.7\util\silicon_labs\silabs_core" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_gpio.d" -MT"emlib/em_gpio.o" -o "emlib/em_gpio.o" "C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_gpio.c"
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v2.7\util\silicon_labs\silabs_core" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_pcnt.d" -MT"emlib/em_pcnt.o" -o "emlib/em_pcnt.o" "../emlib/em_pcnt.c"
-In file included from c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v2.7\hardware\kit\common\drivers\displayconfigall.h:48:0,
-                 from c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v2.7\hardware\kit\common\drivers\display.h:37,
-                 from ../src/4_dma_auto.c:26:
-c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v2.7\hardware\kit\slstk3400a_efm32hg\config\displayconfig.h:35:10: fatal error: displayconfigapp.h: No such file or directory
- #include "displayconfigapp.h"
-          ^~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [src/4_dma_auto.o] Error 1
-make: *** Waiting for unfinished jobs....
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_emu.c
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
  
-Finished building: C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7/platform/emlib/src/em_gpio.c
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
  
-Finished building: ../emlib/em_pcnt.c
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21124           0
+.ARM.exidx             8       21124
+.data                520   536870912
+.bss                 692   536871432
+.heap               1024   536872128
+.stack_dummy        1024   536872128
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39503           0
+.debug_info        68928           0
+.debug_abbrev       9986           0
+.debug_aranges      2056           0
+.debug_str        518640           0
+.debug_loc         11102           0
+.debug_ranges       1768           0
+.debug_macro       99306           0
+.debug_frame        9012           0
+Total             784859
+
+
+ 
+15:20:38 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+make: Nothing to be done for `all'.
+15:21:40 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21144           0
+.ARM.exidx             8       21144
+.data                520   536870912
+.bss                 692   536871432
+.heap               1024   536872128
+.stack_dummy        1024   536872128
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39506           0
+.debug_info        68928           0
+.debug_abbrev       9986           0
+.debug_aranges      2056           0
+.debug_str        518640           0
+.debug_loc         11102           0
+.debug_ranges       1768           0
+.debug_macro       99306           0
+.debug_frame        9012           0
+Total             784882
+
+
+ 
+15:22:15 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21176           0
+.ARM.exidx             8       21176
+.data                520   536870912
+.bss                 692   536871432
+.heap               1024   536872128
+.stack_dummy        1024   536872128
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39508           0
+.debug_info        68928           0
+.debug_abbrev       9986           0
+.debug_aranges      2056           0
+.debug_str        518640           0
+.debug_loc         11102           0
+.debug_ranges       1768           0
+.debug_macro       99306           0
+.debug_frame        9012           0
+Total             784916
+
+
+ 
+15:22:39 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21432           0
+.ARM.exidx             8       21432
+.data                520   536870912
+.bss                 692   536871432
+.heap               1024   536872128
+.stack_dummy        1024   536872128
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39539           0
+.debug_info        69163           0
+.debug_abbrev       9986           0
+.debug_aranges      2064           0
+.debug_str        518649           0
+.debug_loc         11158           0
+.debug_ranges       1776           0
+.debug_macro       99306           0
+.debug_frame        9044           0
+Total             785551
+
+
+ 
+15:24:51 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21528           0
+.ARM.exidx             8       21528
+.data                520   536870912
+.bss                 700   536871432
+.heap               1024   536872136
+.stack_dummy        1024   536872136
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39632           0
+.debug_info        69678           0
+.debug_abbrev      10066           0
+.debug_aranges      2096           0
+.debug_str        518838           0
+.debug_loc         11370           0
+.debug_ranges       1808           0
+.debug_macro       99324           0
+.debug_frame        9168           0
+Total             786950
+
+
+ 
+15:26:04 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21680           0
+.ARM.exidx             8       21680
+.data                520   536870912
+.bss                 700   536871432
+.heap               1024   536872136
+.stack_dummy        1024   536872136
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39633           0
+.debug_info        69678           0
+.debug_abbrev      10066           0
+.debug_aranges      2096           0
+.debug_str        518838           0
+.debug_loc         11370           0
+.debug_ranges       1808           0
+.debug_macro       99324           0
+.debug_frame        9168           0
+Total             787103
+
+
+ 
+15:28:45 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+../src/emlcd_Working.c: In function 'GPIO_IRQHandler_2':
+../src/emlcd_Working.c:153:5: warning: implicit declaration of function 'SegmentLCD_Write' [-Wimplicit-function-declaration]
+     SegmentLCD_Write("Clear");
+     ^~~~~~~~~~~~~~~~
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21716           0
+.ARM.exidx             8       21716
+.data                520   536870912
+.bss                 700   536871432
+.heap               1024   536872136
+.stack_dummy        1024   536872136
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39709           0
+.debug_info        69795           0
+.debug_abbrev      10123           0
+.debug_aranges      2112           0
+.debug_str        518901           0
+.debug_loc         11470           0
+.debug_ranges       1824           0
+.debug_macro       99324           0
+.debug_frame        9228           0
+Total             787644
+
+
+ 
+15:29:41 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+../src/emlcd_Working.c: In function 'GPIO_IRQHandler_2':
+../src/emlcd_Working.c:153:5: warning: implicit declaration of function 'SegmentLCD_Write' [-Wimplicit-function-declaration]
+     SegmentLCD_Write("Clear");
+     ^~~~~~~~~~~~~~~~
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21748           0
+.ARM.exidx             8       21748
+.data                520   536870912
+.bss                 700   536871432
+.heap               1024   536872136
+.stack_dummy        1024   536872136
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39729           0
+.debug_info        69818           0
+.debug_abbrev      10138           0
+.debug_aranges      2120           0
+.debug_str        518916           0
+.debug_loc         11514           0
+.debug_ranges       1832           0
+.debug_macro       99324           0
+.debug_frame        9256           0
+Total             787837
+
+
+ 
+15:30:24 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+../src/emlcd_Working.c: In function 'GPIO_IRQHandler_2':
+../src/emlcd_Working.c:153:5: warning: implicit declaration of function 'SegmentLCD_Write' [-Wimplicit-function-declaration]
+     SegmentLCD_Write("Clear");
+     ^~~~~~~~~~~~~~~~
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21736           0
+.ARM.exidx             8       21736
+.data                520   536870912
+.bss                 700   536871432
+.heap               1024   536872136
+.stack_dummy        1024   536872136
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39728           0
+.debug_info        69818           0
+.debug_abbrev      10138           0
+.debug_aranges      2120           0
+.debug_str        518916           0
+.debug_loc         11514           0
+.debug_ranges       1832           0
+.debug_macro       99324           0
+.debug_frame        9256           0
+Total             787824
+
+
+ 
+15:31:24 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+../src/emlcd_Working.c: In function 'GPIO_IRQHandler_2':
+../src/emlcd_Working.c:153:5: warning: implicit declaration of function 'SegmentLCD_Write' [-Wimplicit-function-declaration]
+     SegmentLCD_Write("Clear");
+     ^~~~~~~~~~~~~~~~
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+./src/emlcd_Working.o: In function `GPIO_IRQHandler_2':
+C:\Users\tijsv\OneDrive - Universiteit Antwerpen\UAsem6\Embedded\Sleutel\SimplicityStudio\SLSTK3400A_emlcd_3\GNU ARM v7.2.1 - Debug/../src/emlcd_Working.c:153: undefined reference to `SegmentLCD_Write'
+collect2.exe: error: ld returned 1 exit status
+make: *** [SLSTK3400A_emlcd_3.axf] Error 1
+15:31:51 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              21948           0
+.ARM.exidx             8       21948
+.data                520   536870912
+.bss                 700   536871432
+.heap               1024   536872136
+.stack_dummy        1024   536872136
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        39728           0
+.debug_info        69789           0
+.debug_abbrev      10105           0
+.debug_aranges      2120           0
+.debug_str        518899           0
+.debug_loc         11514           0
+.debug_ranges       1832           0
+.debug_macro       99324           0
+.debug_frame        9256           0
+Total             787957
+
+
+ 
+15:32:26 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              22528           0
+.ARM.exidx             8       22528
+.data                536   536870912
+.bss                 704   536871448
+.heap               1024   536872152
+.stack_dummy        1024   536872152
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        42507           0
+.debug_info        74820           0
+.debug_abbrev      10845           0
+.debug_aranges      2296           0
+.debug_str        520072           0
+.debug_loc         12434           0
+.debug_ranges       1992           0
+.debug_macro      100376           0
+.debug_frame        9840           0
+Total             801172
+
+
+ 
+15:33:56 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              22528           0
+.ARM.exidx             8       22528
+.data                536   536870912
+.bss                 704   536871448
+.heap               1024   536872152
+.stack_dummy        1024   536872152
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        42507           0
+.debug_info        74820           0
+.debug_abbrev      10845           0
+.debug_aranges      2296           0
+.debug_str        520072           0
+.debug_loc         12434           0
+.debug_ranges       1992           0
+.debug_macro      100376           0
+.debug_frame        9840           0
+Total             801172
+
+
+ 
+15:34:21 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+make: Nothing to be done for `all'.
+15:37:18 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              22536           0
+.ARM.exidx             8       22536
+.data                536   536870912
+.bss                 704   536871448
+.heap               1024   536872152
+.stack_dummy        1024   536872152
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        42507           0
+.debug_info        74820           0
+.debug_abbrev      10845           0
+.debug_aranges      2296           0
+.debug_str        520072           0
+.debug_loc         12434           0
+.debug_ranges       1992           0
+.debug_macro      100376           0
+.debug_frame        9840           0
+Total             801180
+
+
+ 
+15:39:06 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              22548           0
+.ARM.exidx             8       22548
+.data                536   536870912
+.bss                 704   536871448
+.heap               1024   536872152
+.stack_dummy        1024   536872152
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        42507           0
+.debug_info        74820           0
+.debug_abbrev      10845           0
+.debug_aranges      2296           0
+.debug_str        520072           0
+.debug_loc         12434           0
+.debug_ranges       1992           0
+.debug_macro      100376           0
+.debug_frame        9840           0
+Total             801192
+
+
+ 
+15:39:54 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              22560           0
+.ARM.exidx             8       22560
+.data                536   536870912
+.bss                 704   536871448
+.heap               1024   536872152
+.stack_dummy        1024   536872152
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        42507           0
+.debug_info        74820           0
+.debug_abbrev      10845           0
+.debug_aranges      2296           0
+.debug_str        520072           0
+.debug_loc         12434           0
+.debug_ranges       1992           0
+.debug_macro      100376           0
+.debug_frame        9840           0
+Total             801204
+
+
+ 
+15:42:25 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_emlcd_3 ****
+make -j4 all 
+Building file: ../src/emlcd_Working.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/emlcd_Working.d" -MT"src/emlcd_Working.o" -o "src/emlcd_Working.o" "../src/emlcd_Working.c"
+Finished building: ../src/emlcd_Working.c
+ 
+Building target: SLSTK3400A_emlcd_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_emlcd_3.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_emlcd_3.map" --specs=nano.specs -o SLSTK3400A_emlcd_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/emlcd_Working.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_emlcd_3.axf
+ 
+Building hex file: SLSTK3400A_emlcd_3.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.hex"
+ 
+Building bin file: SLSTK3400A_emlcd_3.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.bin"
+ 
+Building s37 file: SLSTK3400A_emlcd_3.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_emlcd_3.axf" "SLSTK3400A_emlcd_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "SLSTK3400A_emlcd_3.axf" -A
+SLSTK3400A_emlcd_3.axf  :
+section             size        addr
+.text              22552           0
+.ARM.exidx             8       22552
+.data                536   536870912
+.bss                 704   536871448
+.heap               1024   536872152
+.stack_dummy        1024   536872152
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        42507           0
+.debug_info        74820           0
+.debug_abbrev      10845           0
+.debug_aranges      2296           0
+.debug_str        520072           0
+.debug_loc         12434           0
+.debug_ranges       1992           0
+.debug_macro      100376           0
+.debug_frame        9840           0
+Total             801196
+
+
  
