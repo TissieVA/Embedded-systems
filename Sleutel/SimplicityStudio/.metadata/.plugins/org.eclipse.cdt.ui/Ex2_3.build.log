@@ -1,15 +1,44 @@
-19:43:16 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_3 ****
+16:01:38 **** Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_3 ****
 make -j4 all 
-Building file: ../src/3_stopwatch.c
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/3_stopwatch.d" -MT"src/3_stopwatch.o" -o "src/3_stopwatch.o" "../src/3_stopwatch.c"
-In file included from c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v2.7\hardware\kit\common\drivers\display.h:36:0,
-                 from ../src/3_stopwatch.c:27:
-c:\siliconlabs\simplicitystudio\v4\developer\sdks\gecko_sdk_suite\v2.7\hardware\kit\common\drivers\emstatus.h:35:10: fatal error: em_types.h: No such file or directory
- #include "em_types.h"          /* typedef uint32_t EMSTATUS; */
-          ^~~~~~~~~~~~
-compilation terminated.
-make: *** [src/3_stopwatch.o] Error 1
+Building target: Ex2_3.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_3.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_3.map" --specs=nano.specs -o Ex2_3.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/stopwatch.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: Ex2_3.axf
+ 
+Building hex file: Ex2_3.hex
+arm-none-eabi-objcopy -O ihex "Ex2_3.axf" "Ex2_3.hex"
+ 
+Building bin file: Ex2_3.bin
+arm-none-eabi-objcopy -O binary "Ex2_3.axf" "Ex2_3.bin"
+ 
+Building s37 file: Ex2_3.s37
+arm-none-eabi-objcopy -O srec "Ex2_3.axf" "Ex2_3.s37"
+ 
+Running size tool
+arm-none-eabi-size "Ex2_3.axf" -A
+Ex2_3.axf  :
+section             size        addr
+.text              22552           0
+.ARM.exidx             8       22552
+.data                536   536870912
+.bss                 704   536871448
+.heap               1024   536872152
+.stack_dummy        1024   536872152
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        42503           0
+.debug_info        74820           0
+.debug_abbrev      10845           0
+.debug_aranges      2296           0
+.debug_str        520068           0
+.debug_loc         12434           0
+.debug_ranges       1992           0
+.debug_macro      100376           0
+.debug_frame        9840           0
+Total             801188
 
-19:43:18 Build Finished (took 2s.324ms)
+
+ 
+
+16:01:42 Build Finished (took 3s.508ms)
 
