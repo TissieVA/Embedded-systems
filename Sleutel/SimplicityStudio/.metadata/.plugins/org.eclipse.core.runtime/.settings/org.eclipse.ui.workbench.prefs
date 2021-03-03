@@ -7,3 +7,4 @@ UIActivities.org.eclipse.cdt.debug.edc.ui.edcActivity=true
 UIActivities.org.eclipse.debug.ui.contextualMenuProfile=true
 eclipse.preferences.version=1
 org.eclipse.jface.textfont=1|Courier New|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands>\r\n<keyBinding commandId\="com.silabs.studio.energyprofiler.ui.CaptureStopCommand" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="PAGE_UP"/>\r\n</org.eclipse.ui.commands>

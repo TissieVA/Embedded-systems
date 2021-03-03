@@ -22,11 +22,17 @@
 #include "em_emu.h"
 #include "em_gpio.h"
 #include "em_pcnt.h"
+#include "em_rtc.h"
+#include "em_dma.h"
 
 #include "display.h"
 #include "textdisplay.h"
 #include "retargettextdisplay.h"
 #include "em4config.h"
+
+static volatile bool      displayEnabled = false; /* Status of LCD display. */
+
+static DISPLAY_Device_t displayDevice;    /* Display device handle.         */
 
 /* DMA control block, must be aligned to 256. */
 #if defined (__ICCARM__)
@@ -66,8 +72,8 @@ void flashTransferComplete(unsigned int channel, bool primary, void *user)
 
   /* Indicate that the transfer is complete turning on the antenna symbol
    * and write the content of the ramBuffer to the LCD screen */
-  printf("ANT");
-  printf(ramBuffer);
+  printf("\nANT\n");
+  printf("%s",ramBuffer);
 }
 
 /**************************************************************************//**
@@ -130,6 +136,18 @@ int main(void)
   /* Initialize LCD */
   DISPLAY_Init();
 
+  /* Retrieve the properties of the display. */
+  if ( DISPLAY_DeviceGet(0, &displayDevice) != DISPLAY_EMSTATUS_OK ) {
+	  /* Unable to get display handle. */
+	  while ( 1 ) ;
+  }
+  /* Retarget stdio to the display. */
+  if ( TEXTDISPLAY_EMSTATUS_OK != RETARGET_TextDisplayInit() ) {
+	  /* Text display initialization failed. */
+	  while ( 1 ) ;
+  }
+
+
   /* Enable the DMA clock */
   CMU_ClockEnable(cmuClock_DMA, true);
 
@@ -138,6 +156,11 @@ int main(void)
   dmaInit.hprot        = 0;
   dmaInit.controlBlock = dmaControlBlock;
   DMA_Init(&dmaInit);
+
+
+
+
+
 
   /* Configure the DMA and perform the transfer */
   performFlashTransfer();
