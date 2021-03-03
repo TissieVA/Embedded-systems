@@ -2758,3 +2758,21 @@ java.lang.ClassCastException: org.eclipse.cdt.debug.edc.internal.services.dsf.Mo
 
 !ENTRY org.eclipse.cdt.debug.edc 4 0 2021-03-03 23:01:38.320
 !MESSAGE Unknown context [rc.root.000440042548] is reported in suspended event. Make sure TCF agent has reported contextAdded event first.
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-03 23:06:24.030
+!MESSAGE Indexed 'Ex2_5' (19 sources, 136 headers) in 1,47 sec: 7.654 declarations; 18.402 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2021-03-03 23:11:12.511
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY org.eclipse.cdt.debug.edc 4 0 2021-03-03 23:11:16.945
+!MESSAGE Unknown context [rc.root.000440042548] is reported in suspended event. Make sure TCF agent has reported contextAdded event first.
+
+!ENTRY com.silabs.ss.framework.debugger.tcf.agent 1 0 2021-03-03 23:13:13.973
+!MESSAGE Launching SiAgent (Silicon Labs TCF Agent)
+
+!ENTRY org.eclipse.cdt.debug.edc 4 0 2021-03-03 23:13:17.058
+!MESSAGE Unknown context [rc.root.000440042548] is reported in suspended event. Make sure TCF agent has reported contextAdded event first.
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-03 23:14:11.921
+!MESSAGE Indexed 'Ex2_6' (20 sources, 137 headers) in 1,35 sec: 7.873 declarations; 19.158 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
