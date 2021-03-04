@@ -1,210 +1,49 @@
-23:05:56 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_4 ****
+16:19:55 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_clock ****
 make -j4 all 
-Building file: ../src/4_dma_auto.c
+Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/4_dma_auto.d" -MT"src/4_dma_auto.o" -o "src/4_dma_auto.o" "../src/4_dma_auto.c"
-Finished building: ../src/4_dma_auto.c
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DGLIB_NO_DEFAULT_FONT=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/clock" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -Os -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
-Building target: Ex2_4.axf
+Building target: SLSTK3400A_clock.axf
 Invoking: GNU ARM C Linker
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_4.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_4.map" --specs=nano.specs -o Ex2_4.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_dma.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_usart.o" "./src/4_dma_auto.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
-Finished building target: Ex2_4.axf
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "SLSTK3400A_clock.ld" -Xlinker --gc-sections -Xlinker -Map="SLSTK3400A_clock.map" --specs=nano.specs -o SLSTK3400A_clock.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./Graphics/dmd_display.o" "./Graphics/glib.o" "./Graphics/glib_bitmap.o" "./Graphics/glib_circle.o" "./Graphics/glib_font_narrow_6x8.o" "./Graphics/glib_font_number_16x20.o" "./Graphics/glib_line.o" "./Graphics/glib_rectangle.o" "./Graphics/glib_string.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_system.o" "./emlib/em_usart.o" "./src/analog_clock.o" "./src/main.o" -lm -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: SLSTK3400A_clock.axf
  
-Building hex file: Ex2_4.hex
-arm-none-eabi-objcopy -O ihex "Ex2_4.axf" "Ex2_4.hex"
+Building hex file: SLSTK3400A_clock.hex
+arm-none-eabi-objcopy -O ihex "SLSTK3400A_clock.axf" "SLSTK3400A_clock.hex"
  
-Building bin file: Ex2_4.bin
-arm-none-eabi-objcopy -O binary "Ex2_4.axf" "Ex2_4.bin"
+Building bin file: SLSTK3400A_clock.bin
+arm-none-eabi-objcopy -O binary "SLSTK3400A_clock.axf" "SLSTK3400A_clock.bin"
  
-Building s37 file: Ex2_4.s37
-arm-none-eabi-objcopy -O srec "Ex2_4.axf" "Ex2_4.s37"
+Building s37 file: SLSTK3400A_clock.s37
+arm-none-eabi-objcopy -O srec "SLSTK3400A_clock.axf" "SLSTK3400A_clock.s37"
  
 Running size tool
-arm-none-eabi-size "Ex2_4.axf" -A
-Ex2_4.axf  :
+arm-none-eabi-size "SLSTK3400A_clock.axf" -A
+SLSTK3400A_clock.axf  :
 section             size        addr
-.text              22648           0
-.ARM.exidx             8       22648
-.data                536   536870912
-.bss                 968   536871680
-.heap               1024   536872648
-.stack_dummy        1024   536872648
+.text              13052           0
+.ARM.exidx             8       13052
+.data                152   536870912
+.bss                2616   536871064
+.heap               1024   536873680
+.stack_dummy        1024   536873680
 .ARM.attributes       40           0
 .comment             126           0
-.debug_line        45046           0
-.debug_info        80157           0
-.debug_abbrev      11445           0
-.debug_aranges      2360           0
-.debug_str        521266           0
-.debug_loc         12788           0
-.debug_ranges       2040           0
-.debug_macro      101245           0
-.debug_frame       10040           0
-Total             812761
+.debug_line        48223           0
+.debug_info       101709           0
+.debug_abbrev      16868           0
+.debug_aranges      2176           0
+.debug_str        524396           0
+.debug_loc         28971           0
+.debug_ranges       3120           0
+.debug_macro      102873           0
+.debug_frame        6732           0
+Total             853110
 
 
  
-23:11:07 **** Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_5 ****
-make -j4 all 
-Building file: ../src/5_dma_basic.c
-Building file: ../emlib/em_timer.c
-Invoking: GNU ARM C Compiler
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/5_dma_basic.d" -MT"src/5_dma_basic.o" -o "src/5_dma_basic.o" "../src/5_dma_basic.c"
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_timer.d" -MT"emlib/em_timer.o" -o "emlib/em_timer.o" "../emlib/em_timer.c"
-Finished building: ../emlib/em_timer.c
-Finished building: ../src/5_dma_basic.c
- 
- 
-Building target: Ex2_5.axf
-Invoking: GNU ARM C Linker
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_5.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_5.map" --specs=nano.specs -o Ex2_5.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_dma.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_timer.o" "./emlib/em_usart.o" "./src/5_dma_basic.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
-Finished building target: Ex2_5.axf
- 
-Building hex file: Ex2_5.hex
-arm-none-eabi-objcopy -O ihex "Ex2_5.axf" "Ex2_5.hex"
- 
-Building bin file: Ex2_5.bin
-arm-none-eabi-objcopy -O binary "Ex2_5.axf" "Ex2_5.bin"
- 
-Building s37 file: Ex2_5.s37
-arm-none-eabi-objcopy -O srec "Ex2_5.axf" "Ex2_5.s37"
- 
-Running size tool
-arm-none-eabi-size "Ex2_5.axf" -A
-Ex2_5.axf  :
-section             size        addr
-.text              23400           0
-.ARM.exidx             8       23400
-.data                536   536870912
-.bss                 968   536871680
-.heap               1024   536872648
-.stack_dummy        1024   536872648
-.ARM.attributes       40           0
-.comment             126           0
-.debug_line        47895           0
-.debug_info        87079           0
-.debug_abbrev      12260           0
-.debug_aranges      2496           0
-.debug_str        524276           0
-.debug_loc         13560           0
-.debug_ranges       2160           0
-.debug_macro      102303           0
-.debug_frame       10500           0
-Total             829655
-
-
- 
-23:11:28 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_5 ****
+16:20:07 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_clock ****
 make -j4 all 
 make: Nothing to be done for `all'.
-23:13:01 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_5 ****
-make -j4 all 
-make: Nothing to be done for `all'.
-23:21:05 **** Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_6 ****
-make -j4 all 
-Building file: ../src/6_prs_gpio_timer.c
-Building file: ../emlib/em_acmp.c
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/6_prs_gpio_timer.d" -MT"src/6_prs_gpio_timer.o" -o "src/6_prs_gpio_timer.o" "../src/6_prs_gpio_timer.c"
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"emlib/em_acmp.d" -MT"emlib/em_acmp.o" -o "emlib/em_acmp.o" "../emlib/em_acmp.c"
-../src/6_prs_gpio_timer.c: In function 'TIMER0_IRQHandler':
-../src/6_prs_gpio_timer.c:49:3: warning: implicit declaration of function 'printf'; did you mean 'rintf'? [-Wimplicit-function-declaration]
-   printf("%lu",TIMER_CaptureGet(TIMER0, 0));
-   ^~~~~~
-   rintf
-Finished building: ../emlib/em_acmp.c
- 
-Finished building: ../src/6_prs_gpio_timer.c
- 
-Building target: Ex2_6.axf
-Invoking: GNU ARM C Linker
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_6.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_6.map" --specs=nano.specs -o Ex2_6.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_acmp.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_dma.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_timer.o" "./emlib/em_usart.o" "./src/6_prs_gpio_timer.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
-Finished building target: Ex2_6.axf
- 
-Building hex file: Ex2_6.hex
-arm-none-eabi-objcopy -O ihex "Ex2_6.axf" "Ex2_6.hex"
- 
-Building bin file: Ex2_6.bin
-arm-none-eabi-objcopy -O binary "Ex2_6.axf" "Ex2_6.bin"
- 
-Building s37 file: Ex2_6.s37
-arm-none-eabi-objcopy -O srec "Ex2_6.axf" "Ex2_6.s37"
- 
-Running size tool
-arm-none-eabi-size "Ex2_6.axf" -A
-Ex2_6.axf  :
-section             size        addr
-.text              22248           0
-.ARM.exidx             8       22248
-.data                520   536870912
-.bss                 688   536871432
-.heap               1024   536872120
-.stack_dummy        1024   536872120
-.ARM.attributes       40           0
-.comment             126           0
-.debug_line        45058           0
-.debug_info        81997           0
-.debug_abbrev      11524           0
-.debug_aranges      2336           0
-.debug_str        522965           0
-.debug_loc         12738           0
-.debug_ranges       2016           0
-.debug_macro      101115           0
-.debug_frame        9976           0
-Total             815403
-
-
- 
-23:22:22 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_6 ****
-make -j4 all 
-Building file: ../src/6_prs_gpio_timer.c
-Invoking: GNU ARM C Compiler
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/6_prs_gpio_timer.d" -MT"src/6_prs_gpio_timer.o" -o "src/6_prs_gpio_timer.o" "../src/6_prs_gpio_timer.c"
-../src/6_prs_gpio_timer.c: In function 'TIMER0_IRQHandler':
-../src/6_prs_gpio_timer.c:49:3: warning: implicit declaration of function 'printf'; did you mean 'rintf'? [-Wimplicit-function-declaration]
-   printf("%lu\n",TIMER_CaptureGet(TIMER0, 0));
-   ^~~~~~
-   rintf
-Finished building: ../src/6_prs_gpio_timer.c
- 
-Building target: Ex2_6.axf
-Invoking: GNU ARM C Linker
-arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_6.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_6.map" --specs=nano.specs -o Ex2_6.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_acmp.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_dma.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_timer.o" "./emlib/em_usart.o" "./src/6_prs_gpio_timer.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
-Finished building target: Ex2_6.axf
- 
-Building hex file: Ex2_6.hex
-arm-none-eabi-objcopy -O ihex "Ex2_6.axf" "Ex2_6.hex"
- 
-Building bin file: Ex2_6.bin
-arm-none-eabi-objcopy -O binary "Ex2_6.axf" "Ex2_6.bin"
- 
-Building s37 file: Ex2_6.s37
-arm-none-eabi-objcopy -O srec "Ex2_6.axf" "Ex2_6.s37"
- 
-Running size tool
-arm-none-eabi-size "Ex2_6.axf" -A
-Ex2_6.axf  :
-section             size        addr
-.text              22252           0
-.ARM.exidx             8       22252
-.data                520   536870912
-.bss                 688   536871432
-.heap               1024   536872120
-.stack_dummy        1024   536872120
-.ARM.attributes       40           0
-.comment             126           0
-.debug_line        45058           0
-.debug_info        81997           0
-.debug_abbrev      11524           0
-.debug_aranges      2336           0
-.debug_str        522965           0
-.debug_loc         12738           0
-.debug_ranges       2016           0
-.debug_macro      101115           0
-.debug_frame        9976           0
-Total             815407
-
-
- 

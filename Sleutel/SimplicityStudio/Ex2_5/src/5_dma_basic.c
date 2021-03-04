@@ -175,6 +175,7 @@ int main(void)
 	  /* Unable to get display handle. */
 	  while ( 1 ) ;
   }
+
   /* Retarget stdio to the display. */
   if ( TEXTDISPLAY_EMSTATUS_OK != RETARGET_TextDisplayInit() ) {
 	  /* Text display initialization failed. */

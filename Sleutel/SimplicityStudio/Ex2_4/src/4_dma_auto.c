@@ -31,7 +31,7 @@
 #include "em4config.h"
 
 
-static DISPLAY_Device_t displayDevice;    /* Display device handle.         */
+static DISPLAY_Device_t displayDevice;    /* Display device handle.*/
 
 /* DMA control block, must be aligned to 256. */
 #if defined (__ICCARM__)
@@ -155,11 +155,6 @@ int main(void)
   dmaInit.hprot        = 0;
   dmaInit.controlBlock = dmaControlBlock;
   DMA_Init(&dmaInit);
-
-
-
-
-
 
   /* Configure the DMA and perform the transfer */
   performFlashTransfer();

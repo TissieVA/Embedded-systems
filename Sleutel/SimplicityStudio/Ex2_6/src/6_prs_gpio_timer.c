@@ -30,7 +30,7 @@
 
 static DISPLAY_Device_t displayDevice;    /* Display device handle.         */
 
-/* Defines for Push Button 0 & 1 */
+/* Defines for Push Button 0 */
 #define PB0_PORT                    gpioPortC
 #define PB0_PIN                     9
 

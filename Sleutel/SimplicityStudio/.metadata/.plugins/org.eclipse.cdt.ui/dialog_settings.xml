@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="${StudioSdkPath}/kits/EFM32_Gxxx_STK/config" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
+	<item value="&quot;${StudioSdkPath}/app/mcu_example/SLSTK3400A_EFM32HG/emlcd&quot;" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 	<section name="OptionalMessageDialog.hide.">
