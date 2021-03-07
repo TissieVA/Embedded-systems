@@ -35,16 +35,11 @@
  * = frequency of LCD polarity inversion. */
 #define RTC_PULSE_FREQUENCY    (64)
 
-/* Clock mode */
-typedef enum {
-  CLOCK_MODE_ANALOG,
-  CLOCK_MODE_DIGITAL
-} ClockMode_t;
-volatile ClockMode_t clockMode = CLOCK_MODE_ANALOG;
 
 /* The current time reference. Number of seconds since midnight
  * January 1, 1970.  */
 static volatile time_t curTime = 0;
+static volatile time_t curCount =0;
 
 /* PCNT interrupt counter */
 static volatile int pcntIrqCount = 0;
@@ -52,6 +47,8 @@ static volatile int pcntIrqCount = 0;
 /* Flag to check when we should redraw a frame */
 static volatile bool updateDisplay = true;
 static volatile bool timeIsFastForwarding = false;
+static volatile bool scheduleTimeRequest = false;
+
 
 /* Global glib context */
 GLIB_Context_t gc;
@@ -94,17 +91,20 @@ void GPIO_Unified_IRQ(void)
 
   /* Act on interrupts */
   if (interruptMask & (1 << BSP_GPIO_PB0_PIN)) {
-    /* PB0: Toggle clock mode (analog/digital) */
-    clockMode = CLOCK_MODE_DIGITAL;
+
+    scheduleTimeRequest = true;
     updateDisplay = true;
   }
 
   if (interruptMask & (1 << BSP_GPIO_PB1_PIN)) {
-    /* Increase time by 1 second. */
+
+
+	  /* Increase time by 1 second. */
     curTime++;
 
     timeIsFastForwarding = true;
     updateDisplay = true;
+
   }
 }
 
@@ -168,7 +168,8 @@ void PCNT0_IRQHandler(void)
   }
 
   /* Notify main loop to redraw clock on display. */
-  updateDisplay = true;
+  if(!(scheduleTimeRequest))
+	  updateDisplay = true;
 }
 
 /***************************************************************************//**
@@ -214,6 +215,25 @@ void fastForwardTime(void (*drawClock)(struct tm*, bool redraw))
   timeIsFastForwarding = false;
 }
 
+void scheduleTime(void (*drawClock)(struct tm*, bool redraw))
+{
+  unsigned int i = 0;
+  struct tm    *counttime;
+
+  /* Show a counter from 1 to 10 on screen, add 1 when pressing right button */
+  curCount += 1;
+
+  counttime = gmtime((time_t const *) &curCount);
+  drawClock(counttime, true);
+
+  if(curCount >= 10)
+  {
+	  curCount = 0;
+	  scheduleTimeRequest = false;
+  }
+
+}
+
 /***************************************************************************//**
  * @brief  Updates the digital clock.
  *
@@ -236,6 +256,7 @@ void digitalClockUpdate(struct tm *time, bool redraw)
   DMD_updateDisplay();
 }
 
+
 /***************************************************************************//**
  * @brief  Shows an digital clock on the display.
  *
@@ -246,10 +267,15 @@ void digitalClockShow(bool redraw)
   struct tm *time = gmtime((time_t const *) &curTime);
 
   if (updateDisplay) {
-    digitalClockUpdate(time, redraw);
+	  if(!(scheduleTimeRequest))
+		  digitalClockUpdate(time, redraw);
     updateDisplay = false;
     if (timeIsFastForwarding) {
       fastForwardTime(digitalClockUpdate);
+    }
+    if(scheduleTimeRequest)
+    {
+    	scheduleTime(digitalClockUpdate);
     }
   }
 }
@@ -261,8 +287,8 @@ void digitalClockShow(bool redraw)
 int main(void)
 {
   EMSTATUS status;
-  bool redraw;
-  ClockMode_t prevClockMode = CLOCK_MODE_DIGITAL;
+
+
 
   /* Chip errata */
   CHIP_Init();
@@ -299,13 +325,11 @@ int main(void)
   pcntInit();
 
 
+
   /* Enter infinite loop that switches between analog and digital clock
    * modes, toggled by pressing the button PB0. */
   while (true) {
-    redraw = (prevClockMode != clockMode);
-    prevClockMode = clockMode;
-    digitalClockShow(redraw);
-
+	digitalClockShow(true);
     /*Sleep between each frame update */
     EMU_EnterEM2(false);
   }
