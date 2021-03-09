@@ -1,4 +1,4 @@
-17:14:04 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_2 ****
+21:31:50 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_2 ****
 make -j4 all 
 Building file: ../src/2_interrupt_timer.c
 Invoking: GNU ARM C Compiler
@@ -35,15 +35,15 @@ section             size        addr
 .debug_info        33799           0
 .debug_abbrev       5086           0
 .debug_aranges      1216           0
-.debug_str        503771           0
+.debug_str        503770           0
 .debug_loc          6668           0
 .debug_ranges       1072           0
 .debug_macro        8502           0
 .debug_frame        4220           0
-Total             591167
+Total             591166
 
 
  
 
-17:14:09 Build Finished (took 5s.26ms)
+21:31:54 Build Finished (took 3s.575ms)
 

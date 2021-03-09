@@ -1,12 +1,8 @@
-20:04:23 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_clock ****
+21:56:01 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_clock ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
 arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DGLIB_NO_DEFAULT_FONT=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/clock" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -Os -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'scheduleTime':
-../src/main.c:220:16: warning: unused variable 'i' [-Wunused-variable]
-   unsigned int i = 0;
-                ^
 Finished building: ../src/main.c
  
 Building target: SLSTK3400A_clock.axf
@@ -27,27 +23,27 @@ Running size tool
 arm-none-eabi-size "SLSTK3400A_clock.axf" -A
 SLSTK3400A_clock.axf  :
 section             size        addr
-.text              13140           0
-.ARM.exidx             8       13140
+.text              13412           0
+.ARM.exidx             8       13412
 .data                152   536870912
-.bss                2624   536871064
-.heap               1024   536873688
-.stack_dummy        1024   536873688
+.bss                2708   536871064
+.heap               1024   536873776
+.stack_dummy        1024   536873776
 .ARM.attributes       40           0
 .comment             126           0
-.debug_line        48234           0
-.debug_info       101921           0
-.debug_abbrev      16881           0
+.debug_line        48299           0
+.debug_info       102141           0
+.debug_abbrev      16963           0
 .debug_aranges      2184           0
-.debug_str        524385           0
-.debug_loc         29043           0
-.debug_ranges       3128           0
-.debug_macro      102895           0
-.debug_frame        6760           0
-Total             853569
+.debug_str        524409           0
+.debug_loc         29165           0
+.debug_ranges       3192           0
+.debug_macro      102907           0
+.debug_frame        6768           0
+Total             854522
 
 
  
 
-20:04:29 Build Finished (took 5s.422ms)
+21:56:07 Build Finished (took 5s.581ms)
 

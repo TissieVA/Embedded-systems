@@ -31,6 +31,10 @@
 #include "glib.h"
 #include "bspconfig.h"
 
+/* Defines for the LED 0 */
+#define LED0_PORT    gpioPortF
+#define LED0_PIN     4
+
 /* Frequency of RTC (COMP0) pulses on PRS channel 2
  * = frequency of LCD polarity inversion. */
 #define RTC_PULSE_FREQUENCY    (64)
@@ -41,6 +45,8 @@
 static volatile time_t curTime = 0;
 static volatile time_t curCount =0;
 
+static volatile time_t timeArray[10];
+
 /* PCNT interrupt counter */
 static volatile int pcntIrqCount = 0;
 
@@ -48,6 +54,7 @@ static volatile int pcntIrqCount = 0;
 static volatile bool updateDisplay = true;
 static volatile bool timeIsFastForwarding = false;
 static volatile bool scheduleTimeRequest = false;
+static volatile bool buttonPressed = false;
 
 
 /* Global glib context */
@@ -71,6 +78,8 @@ static void gpioSetup(void)
   GPIO_PinModeSet(BSP_GPIO_PB1_PORT, BSP_GPIO_PB1_PIN, gpioModeInputPull, 1);
   GPIO_IntConfig(BSP_GPIO_PB1_PORT, BSP_GPIO_PB1_PIN, false, true, true);
 
+  GPIO_PinModeSet(LED0_PORT, LED0_PIN, gpioModePushPull, 0);
+
   NVIC_ClearPendingIRQ(GPIO_EVEN_IRQn);
   NVIC_EnableIRQ(GPIO_EVEN_IRQn);
 
@@ -91,16 +100,20 @@ void GPIO_Unified_IRQ(void)
 
   /* Act on interrupts */
   if (interruptMask & (1 << BSP_GPIO_PB0_PIN)) {
-
+	buttonPressed = true;
     scheduleTimeRequest = true;
     updateDisplay = true;
   }
 
   if (interruptMask & (1 << BSP_GPIO_PB1_PIN)) {
 
-
+	if(!(scheduleTimeRequest))
 	  /* Increase time by 1 second. */
-    curTime++;
+		curTime++;
+	else
+	{
+		timeArray[curCount-1]++;
+	}
 
     timeIsFastForwarding = true;
     updateDisplay = true;
@@ -163,8 +176,24 @@ void PCNT0_IRQHandler(void)
   pcntIrqCount++;
 
   /* Increase time with 1s */
-  if (!(timeIsFastForwarding)) {
+  if (!(timeIsFastForwarding))
+  {
     curTime++;
+
+    /* Check if curtime is been set a a scheduled time*/
+    for(int i =0; i<10; i++)
+    {
+    	if(timeArray[i] == curTime) //turn on led
+    	{
+    		GPIO_PinOutToggle(LED0_PORT, LED0_PIN);
+    	}
+
+    	if(timeArray[i] == (curTime+30)) //after 30sec turn led back off
+    	{
+    		GPIO_PinOutToggle(LED0_PORT, LED0_PIN);
+
+    	}
+    }
   }
 
   /* Notify main loop to redraw clock on display. */
@@ -188,14 +217,16 @@ void fastForwardTime(void (*drawClock)(struct tm*, bool redraw))
   while (pcntIrqCount != waitForPcntIrqCount) {
     /* Return if the button is released */
     if (GPIO_PinInGet(BSP_GPIO_PB1_PORT, BSP_GPIO_PB1_PIN) == 1) {
-      timeIsFastForwarding = false;
-      return;
+    	time = gmtime((time_t const *) &timeArray[curCount-1]);
+    	timeIsFastForwarding = false;
+    	drawClock(time, true);
+    	return;
     }
 
     /* Keep updating the second counter while waiting */
     if (updateDisplay) {
-      time = gmtime((time_t const *) &curTime);
-      drawClock(time, true);
+    	time = gmtime((time_t const *) &curTime);
+    	drawClock(time, true);
     }
 
     EMU_EnterEM2(false);
@@ -204,10 +235,20 @@ void fastForwardTime(void (*drawClock)(struct tm*, bool redraw))
   /* Keep incrementing the time while the button is held */
   while (GPIO_PinInGet(BSP_GPIO_PB1_PORT, BSP_GPIO_PB1_PIN) == 0) {
     if (i % 1000 == 0) {
-      /* Increase time by 1 minute (60 seconds). */
-      curTime += 60;
+    	if(!(scheduleTimeRequest))
+    	{
+    		/* Increase time by 1 minute (60 seconds). */
+    		curTime += 60;
+    		time = gmtime((time_t const *) &curTime);
+    	}
 
-      time = gmtime((time_t const *) &curTime);
+    	else
+    	{
+    		timeArray[curCount-1]+=60;
+    		time = gmtime((time_t const *) &timeArray[curCount-1]);
+    	}
+
+
       drawClock(time, true);
     }
     i++;
@@ -217,20 +258,26 @@ void fastForwardTime(void (*drawClock)(struct tm*, bool redraw))
 
 void scheduleTime(void (*drawClock)(struct tm*, bool redraw))
 {
-  unsigned int i = 0;
   struct tm    *counttime;
 
-  /* Show a counter from 1 to 10 on screen, add 1 when pressing right button */
+  if(buttonPressed)
+  {
+	/* Show a counter from 1 to 10 on screen, add 1 when pressing right button */
   curCount += 1;
-
+  buttonPressed = false;
   counttime = gmtime((time_t const *) &curCount);
   drawClock(counttime, true);
+  }
 
-  if(curCount >= 10)
+if(curCount > 10)
   {
 	  curCount = 0;
 	  scheduleTimeRequest = false;
   }
+
+
+
+
 
 }
 
