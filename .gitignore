@@ -59,3 +59,11 @@ dkms.conf
 *.lnp
 *.m51
 *.omf
+
+an0009_efm32_getting_started/
+Original zips/
+um002_c/
+um004_interrupts_dma_prs/
+.EFM32HG-RM.pdf
+.Portfolio.docx
+.Troubles controller.png
