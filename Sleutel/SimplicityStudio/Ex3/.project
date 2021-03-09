@@ -61,6 +61,51 @@
 			<locationURI>STUDIO_SDK_LOC/hardware/kit/common/drivers/udelay.c</locationURI>
 		</link>
 		<link>
+			<name>Graphics/dmd_display.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/dmd/display/dmd_display.c</locationURI>
+		</link>
+		<link>
+			<name>Graphics/glib.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/glib/glib.c</locationURI>
+		</link>
+		<link>
+			<name>Graphics/glib_bitmap.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/glib/glib_bitmap.c</locationURI>
+		</link>
+		<link>
+			<name>Graphics/glib_circle.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/glib/glib_circle.c</locationURI>
+		</link>
+		<link>
+			<name>Graphics/glib_font_narrow_6x8.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/glib/glib_font_narrow_6x8.c</locationURI>
+		</link>
+		<link>
+			<name>Graphics/glib_font_number_16x20.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/glib/glib_font_number_16x20.c</locationURI>
+		</link>
+		<link>
+			<name>Graphics/glib_line.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/glib/glib_line.c</locationURI>
+		</link>
+		<link>
+			<name>Graphics/glib_rectangle.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/glib/glib_rectangle.c</locationURI>
+		</link>
+		<link>
+			<name>Graphics/glib_string.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/middleware/glib/glib/glib_string.c</locationURI>
+		</link>
+		<link>
 			<name>emlib/em_assert.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_assert.c</locationURI>
@@ -99,6 +144,11 @@
 			<name>emlib/em_rtc.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_rtc.c</locationURI>
+		</link>
+		<link>
+			<name>emlib/em_system.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_system.c</locationURI>
 		</link>
 		<link>
 			<name>emlib/em_usart.c</name>
