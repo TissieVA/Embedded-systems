@@ -32,7 +32,7 @@
 
 
 
-static volatile bool      displayEnabled = false; /* Status of LCD display. */
+static volatile bool displayEnabled = false; /* Status of LCD display. */
 
 static DISPLAY_Device_t displayDevice;    /* Display device handle.         */
 
@@ -148,7 +148,7 @@ void GPIO_IRQHandler_2(void)
   if (interrupt_source & (1 << PB1_PIN))
   {
     GPIO_IntClear(1 << PB1_PIN);
-    printf("\n\n\n -----Clear-----\n");
+    printf("\n\n\n-----Clear-----\n");
     time        = 0;
     enableCount = false;
     printf("%lu",time);
@@ -199,9 +199,6 @@ void GPIO_EVEN_IRQHandler(void)
   GPIO_IRQHandler_2();
 }
 
-/***************************************************************************//**
- * @brief GPIO Interrupt handler for odd pins
- *****************************************************************************/
 void GPIO_ODD_IRQHandler(void)
 {
 	GPIO_IRQHandler_1();
@@ -284,7 +281,7 @@ int main(void)
   }
 
 
-  printf("TIJS\n");
+  //printf("TIJS\n");
 
   while (1)
     {

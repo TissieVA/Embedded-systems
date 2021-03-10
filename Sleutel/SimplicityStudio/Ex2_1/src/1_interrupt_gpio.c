@@ -20,7 +20,7 @@
 #include "em_cmu.h"
 #include "bsp.h"
 #include "em_chip.h"
-#include "em_cmu.h"
+#include "em_emu.h"
 #include "em_gpio.h"
 
 /* Since the code can be run on both Giant Gecko and Tiny Gecko we need the following
@@ -47,6 +47,43 @@ bool enableLed0 = 0;
 bool enableLed1 = 0;
 
 
+void GPIO_IRQHandler_EVEN(void)
+{
+	GPIO_IntClear(1 << PB1_PIN);
+
+	/* Toggle value */
+	enableLed1 = !enableLed1;
+
+	if (enableLed1)
+	{
+	/* Turn on LED */
+	GPIO_PinOutSet(LED1_PORT, LED1_PIN);
+	}
+	else
+	{
+	/* Turn off LED )*/
+	GPIO_PinOutClear(LED1_PORT, LED1_PIN);
+	}
+}
+
+void GPIO_IRQHandeler_ODD(void)
+{
+	GPIO_IntClear(1 << PB0_PIN);
+
+	/* Toggle value */
+	enableLed0 = !enableLed0;
+
+	if (enableLed0)
+	{
+		/* Turn on LED */
+		GPIO_PinOutSet(LED0_PORT, LED0_PIN);
+	}
+	else
+	{
+		/* Turn off LED )*/
+		GPIO_PinOutClear(LED0_PORT, LED0_PIN);
+	}
+}
 
 /**************************************************************************//**
  * @brief GPIO_EVEN Handler
@@ -56,21 +93,7 @@ bool enableLed1 = 0;
 
 void GPIO_EVEN_IRQHandler(void)
 {
-	GPIO_IntClear(1 << PB1_PIN);
-
-		  /* Toggle value */
-		  enableLed1 = !enableLed1;
-
-		  if (enableLed1)
-		  {
-		    /* Turn on LED */
-		    GPIO_PinOutSet(LED1_PORT, LED1_PIN);
-		  }
-		  else
-		  {
-		    /* Turn off LED )*/
-		    GPIO_PinOutClear(LED1_PORT, LED1_PIN);
-		  }
+	GPIO_IRQHandler_EVEN();
 }
 
 /**************************************************************************//**
@@ -79,22 +102,9 @@ void GPIO_EVEN_IRQHandler(void)
  *****************************************************************************/
 void GPIO_ODD_IRQHandler(void)
 {
-	GPIO_IntClear(1 << PB0_PIN);
-
-	  /* Toggle value */
-	  enableLed0 = !enableLed0;
-
-	  if (enableLed0)
-	  {
-	    /* Turn on LED */
-	    GPIO_PinOutSet(LED0_PORT, LED0_PIN);
-	  }
-	  else
-	  {
-	    /* Turn off LED )*/
-	    GPIO_PinOutClear(LED0_PORT, LED0_PIN);
-	  }
+	GPIO_IRQHandeler_ODD();
 }
+
 
 
 /**************************************************************************//**

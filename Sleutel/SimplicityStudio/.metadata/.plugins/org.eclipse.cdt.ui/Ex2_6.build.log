@@ -1,6 +1,54 @@
-14:34:07 **** Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_6 ****
+21:16:31 **** Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_6 ****
 make -j4 all 
-make: Nothing to be done for `all'.
+Building file: ../src/6_prs_gpio_timer.c
+Invoking: GNU ARM C Compiler
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -std=c99 '-DDEBUG_EFM=1' '-DEFM32HG322F64=1' -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//app/mcu_example/SLSTK3400A_EFM32HG/emlcd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/SLSTK3400A_EFM32HG/config" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/CMSIS/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/emlib/inc" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/bsp" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//hardware/kit/common/drivers" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/Device/SiliconLabs/EFM32HG/Include" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/glib" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd" -I"C:/SiliconLabs/SimplicityStudio/v4/developer/sdks/gecko_sdk_suite/v2.7//platform/middleware/glib/dmd/ssd2119" -O0 -Wall -c -fmessage-length=0 -mno-sched-prolog -fno-builtin -ffunction-sections -fdata-sections -MMD -MP -MF"src/6_prs_gpio_timer.d" -MT"src/6_prs_gpio_timer.o" -o "src/6_prs_gpio_timer.o" "../src/6_prs_gpio_timer.c"
+../src/6_prs_gpio_timer.c: In function 'TIMER0_IRQHandler':
+../src/6_prs_gpio_timer.c:49:3: warning: implicit declaration of function 'printf'; did you mean 'rintf'? [-Wimplicit-function-declaration]
+   printf("%lu\n",TIMER_CaptureGet(TIMER0, 0));
+   ^~~~~~
+   rintf
+Finished building: ../src/6_prs_gpio_timer.c
+ 
+Building target: Ex2_6.axf
+Invoking: GNU ARM C Linker
+arm-none-eabi-gcc -g3 -gdwarf-2 -mcpu=cortex-m0plus -mthumb -T "Ex2_6.ld" -Xlinker --gc-sections -Xlinker -Map="Ex2_6.map" --specs=nano.specs -o Ex2_6.axf "./CMSIS/EFM32HG/startup_efm32hg.o" "./CMSIS/EFM32HG/system_efm32hg.o" "./Drivers/display.o" "./Drivers/displayls013b7dh03.o" "./Drivers/displaypalemlib.o" "./Drivers/retargetio.o" "./Drivers/retargettextdisplay.o" "./Drivers/textdisplay.o" "./Drivers/udelay.o" "./emlib/em_acmp.o" "./emlib/em_assert.o" "./emlib/em_cmu.o" "./emlib/em_core.o" "./emlib/em_dma.o" "./emlib/em_emu.o" "./emlib/em_gpio.o" "./emlib/em_pcnt.o" "./emlib/em_prs.o" "./emlib/em_rtc.o" "./emlib/em_timer.o" "./emlib/em_usart.o" "./src/6_prs_gpio_timer.o" -Wl,--start-group -lgcc -lc -lnosys -Wl,--end-group
+Finished building target: Ex2_6.axf
+ 
+Building hex file: Ex2_6.hex
+arm-none-eabi-objcopy -O ihex "Ex2_6.axf" "Ex2_6.hex"
+ 
+Building bin file: Ex2_6.bin
+arm-none-eabi-objcopy -O binary "Ex2_6.axf" "Ex2_6.bin"
+ 
+Building s37 file: Ex2_6.s37
+arm-none-eabi-objcopy -O srec "Ex2_6.axf" "Ex2_6.s37"
+ 
+Running size tool
+arm-none-eabi-size "Ex2_6.axf" -A
+Ex2_6.axf  :
+section             size        addr
+.text              22252           0
+.ARM.exidx             8       22252
+.data                520   536870912
+.bss                 688   536871432
+.heap               1024   536872120
+.stack_dummy        1024   536872120
+.ARM.attributes       40           0
+.comment             126           0
+.debug_line        45058           0
+.debug_info        81997           0
+.debug_abbrev      11524           0
+.debug_aranges      2336           0
+.debug_str        522965           0
+.debug_loc         12738           0
+.debug_ranges       2016           0
+.debug_macro      101115           0
+.debug_frame        9976           0
+Total             815407
 
-14:34:11 Build Finished (took 4s.124ms)
+
+ 
+
+21:16:36 Build Finished (took 5s.365ms)
 

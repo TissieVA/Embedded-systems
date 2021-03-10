@@ -1,4 +1,4 @@
-22:06:25 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex3 ****
+21:36:22 **** Build of configuration GNU ARM v7.2.1 - Debug for project Ex3 ****
 make -j4 all 
 Building file: ../src/main.c
 Invoking: GNU ARM C Compiler
@@ -31,8 +31,8 @@ section             size        addr
 .stack_dummy        1024   536873784
 .ARM.attributes       40           0
 .comment             126           0
-.debug_line        48301           0
-.debug_info       102197           0
+.debug_line        48297           0
+.debug_info       102194           0
 .debug_abbrev      16963           0
 .debug_aranges      2184           0
 .debug_str        524534           0
@@ -40,10 +40,10 @@ section             size        addr
 .debug_ranges       3192           0
 .debug_macro      102907           0
 .debug_frame        6768           0
-Total             854729
+Total             854722
 
 
  
 
-22:06:30 Build Finished (took 5s.148ms)
+21:36:28 Build Finished (took 6s.222ms)
 

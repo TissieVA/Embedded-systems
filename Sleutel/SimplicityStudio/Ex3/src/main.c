@@ -1,19 +1,4 @@
-/***************************************************************************//**
- * @file
- * @brief Clock example for SLSTK3400A-EFM32HG
- *******************************************************************************
- * # License
- * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
- *******************************************************************************
- *
- * The licensor of this software is Silicon Laboratories Inc. Your use of this
- * software is governed by the terms of Silicon Labs Master Software License
- * Agreement (MSLA) available at
- * www.silabs.com/about-us/legal/master-software-license-agreement. This
- * software is distributed to you in Source Code format and is governed by the
- * sections of the MSLA applicable to Source Code.
- *
- ******************************************************************************/
+
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -45,7 +30,7 @@
 static volatile time_t curTime = 0;
 static volatile time_t curCount =0;
 static volatile time_t ledTime =0;
-static volatile time_t timeArray[10];
+static volatile time_t timeArray[9];
 
 /* PCNT interrupt counter */
 static volatile int pcntIrqCount = 0;
@@ -55,7 +40,6 @@ static volatile bool updateDisplay = true;
 static volatile bool timeIsFastForwarding = false;
 static volatile bool scheduleTimeRequest = false;
 static volatile bool buttonPressed = false;
-
 
 /* Global glib context */
 GLIB_Context_t gc;
@@ -217,8 +201,12 @@ void fastForwardTime(void (*drawClock)(struct tm*, bool redraw))
 
   while (pcntIrqCount != waitForPcntIrqCount) {
     /* Return if the button is released */
-    if (GPIO_PinInGet(BSP_GPIO_PB1_PORT, BSP_GPIO_PB1_PIN) == 1) {
-    	time = gmtime((time_t const *) &timeArray[curCount-1]);
+    if (GPIO_PinInGet(BSP_GPIO_PB1_PORT, BSP_GPIO_PB1_PIN) == 1)
+    {
+    	if(scheduleTimeRequest)
+    		time = gmtime((time_t const *) &timeArray[curCount-1]);
+    	else
+    		time = gmtime((time_t const *) &curTime);
     	timeIsFastForwarding = false;
     	drawClock(time, true);
     	return;
@@ -275,7 +263,6 @@ if(curCount > 10)
 	  curCount = 0;
 	  scheduleTimeRequest = false;
   }
-
 }
 
 /***************************************************************************//**
@@ -313,10 +300,13 @@ void digitalClockShow(bool redraw)
   if (updateDisplay) {
 	  if(!(scheduleTimeRequest))
 		  digitalClockUpdate(time, redraw);
+
     updateDisplay = false;
+
     if (timeIsFastForwarding) {
       fastForwardTime(digitalClockUpdate);
     }
+
     if(scheduleTimeRequest)
     {
     	scheduleTime(digitalClockUpdate);
@@ -331,8 +321,6 @@ void digitalClockShow(bool redraw)
 int main(void)
 {
   EMSTATUS status;
-
-
 
   /* Chip errata */
   CHIP_Init();
@@ -369,9 +357,7 @@ int main(void)
   pcntInit();
 
 
-
-  /* Enter infinite loop that switches between analog and digital clock
-   * modes, toggled by pressing the button PB0. */
+  /* Enter infinite loop.*/
   while (true) {
 	digitalClockShow(true);
     /*Sleep between each frame update */
