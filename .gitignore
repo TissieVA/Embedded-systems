@@ -60,13 +60,13 @@ dkms.conf
 *.m51
 *.omf
 
-Sleutel/an0009_efm32_getting_started/
-Sleutel/Original zips/
-Sleutel/um002_c/
-Sleutel/um004_interrupts_dma_prs/
-Sleutel/EFM32HG-RM.pdf
-Sleutel/Portfolio.docx
-Sleutel/Troubles controller.png
-Sleutel/Portfolio_TVA.pdf
-Sleutel/SimplicityStudio/.*
-Sleutel/SimplicityStudio/outgoing/
+EFM32 Happy Gecko/an0009_efm32_getting_started/
+EFM32 Happy Gecko/Original zips/
+EFM32 Happy Gecko/um002_c/
+EFM32 Happy Gecko/um004_interrupts_dma_prs/
+EFM32 Happy Gecko/EFM32HG-RM.pdf
+EFM32 Happy Gecko/Portfolio.docx
+EFM32 Happy Gecko/Troubles controller.png
+EFM32 Happy Gecko/Portfolio_TVA.pdf
+EFM32 Happy Gecko/SimplicityStudio/.*
+EFM32 Happy Gecko/SimplicityStudio/outgoing/

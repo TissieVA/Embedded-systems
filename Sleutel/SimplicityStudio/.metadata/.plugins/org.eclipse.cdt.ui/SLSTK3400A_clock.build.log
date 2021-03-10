@@ -1,6 +1,0 @@
-21:58:10 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project SLSTK3400A_clock ****
-make -j4 all 
-make: Nothing to be done for `all'.
-
-21:58:14 Build Finished (took 3s.454ms)
-

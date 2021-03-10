@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Ex3&apos;" deleteContents="true" description="Delete resource &apos;Ex3&apos;" element1="/Ex3" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1615323505875"/>&#x0A;<refactoring comment="Rename resource &apos;SLSTK3400A_clock&apos; to &apos;Ex3&apos;" description="Rename resource &apos;SLSTK3400A_clock&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SLSTK3400A_clock" name="Ex3" stamp="1615323514201" updateReferences="true"/>
-</session>

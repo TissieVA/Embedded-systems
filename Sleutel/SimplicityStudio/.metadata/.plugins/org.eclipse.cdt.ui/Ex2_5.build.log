@@ -1,6 +1,0 @@
-21:04:22 **** Incremental Build of configuration GNU ARM v7.2.1 - Debug for project Ex2_5 ****
-make -j4 all 
-make: Nothing to be done for `all'.
-
-21:04:25 Build Finished (took 3s.119ms)
-
