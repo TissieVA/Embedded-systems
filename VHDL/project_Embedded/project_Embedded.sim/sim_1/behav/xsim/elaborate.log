@@ -1,0 +1,19 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx2/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ff47fdcc16024aed882c7f0daf419efe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_I2CIntf_behav xil_defaultlib.TB_I2CIntf -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1537] value 8 is out of target constraint range 0 to 7 [C:/Users/tijsv/OneDrive - Universiteit Antwerpen/UAsem6/Embedded/VHDL/I2CIntf.vhd:161]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture rtl of entity xil_defaultlib.I2CIntf [i2cintf_default]
+Compiling architecture behav of entity xil_defaultlib.tb_i2cintf
+Built simulation snapshot TB_I2CIntf_behav

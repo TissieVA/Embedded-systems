@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tijsv/OneDrive - Universiteit Antwerpen/UAsem6/Embedded/VHDL/I2CIntf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'I2CIntf'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/tijsv/OneDrive - Universiteit Antwerpen/UAsem6/Embedded/VHDL/Testbench/TB_I2CIntf.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_I2CIntf'
