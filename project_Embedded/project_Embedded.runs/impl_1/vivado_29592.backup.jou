@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 25 16:39:27 2021
+# Process ID: 29592
+# Current directory: C:/Users/tijsv/OneDrive - Universiteit Antwerpen/UAsem6/Embedded/project_Embedded/project_Embedded.runs/impl_1
+# Command line: vivado.exe -log I2CIntf.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source I2CIntf.tcl -notrace
+# Log file: C:/Users/tijsv/OneDrive - Universiteit Antwerpen/UAsem6/Embedded/project_Embedded/project_Embedded.runs/impl_1/I2CIntf.vdi
+# Journal file: C:/Users/tijsv/OneDrive - Universiteit Antwerpen/UAsem6/Embedded/project_Embedded/project_Embedded.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source I2CIntf.tcl -notrace

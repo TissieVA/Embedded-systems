@@ -1,7 +1,0 @@
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-ERROR: Index -1 out of bound 7 downto 0
-Time: 640025 ns  Iteration: 0  Process: /TB_I2CIntf/Inst_I2CIntf/p_ByteTiming
-  File: C:/Users/tijsv/OneDrive - Universiteit Antwerpen/UAsem6/Embedded/VHDL/I2CIntf.vhd
-
-HDL Line: C:/Users/tijsv/OneDrive - Universiteit Antwerpen/UAsem6/Embedded/VHDL/I2CIntf.vhd:173

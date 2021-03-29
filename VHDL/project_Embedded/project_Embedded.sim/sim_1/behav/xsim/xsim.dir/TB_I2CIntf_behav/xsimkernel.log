@@ -1,7 +1,0 @@
-Running: xsim.dir/TB_I2CIntf_behav/xsimk.exe -simmode gui -wdb TB_I2CIntf_behav.wdb -simrunnum 0 -socket 49674
-Design successfully loaded
-Design Loading Memory Usage: 5824 KB (Peak: 5824 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 9604 KB (Peak: 9604 KB)
-Simulation CPU Usage: 62 ms

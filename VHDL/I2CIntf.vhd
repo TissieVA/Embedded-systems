@@ -15,6 +15,9 @@ entity I2CIntf is
 end I2CIntf;
 
 architecture RTL of I2CIntf is
+
+  --attribute MARK_DEBUG : string;
+
   constant c_ClkDiv     : integer := g_ClkFreq / (4 * g_BusFreq); -- 1/4 of i2c bus frequency
 
   --- FSM for transferring one byte: START, SLAVE ADDRESS, ACK, DATA, ACK, STOP
@@ -30,18 +33,25 @@ architecture RTL of I2CIntf is
   signal SdaInt         : std_logic;
   signal SdaEn          : boolean;
 
-  constant c_SlaveAddr  : std_logic_vector(6 downto 0) := "0011110";
+  constant c_SlaveAddr  : std_logic_vector(6 downto 0) := "1110111";
   signal Addr           : std_logic_vector(7 downto 0);
   signal Data           : std_logic_vector(7 downto 0);
   signal Program        : t_Program;
   signal DataRead       : t_DataRead;
-  signal BitCnt         : integer range 0 to 7;
+  signal BitCnt         : integer range 0 to 8;
   signal ReadCnt        : integer range 0 to 5;
   signal Writing        : boolean;
   signal Reading        : boolean;
   signal WritingAddr    : boolean;
   signal Burst          : boolean;
   signal Status         : boolean;
+
+--  attribute MARK_DEBUG of SDA: signal is "TRUE";
+--  attribute MARK_DEBUG of SCL: signal is "TRUE";
+--  attribute MARK_DEBUG of BusState: signal is "TRUE";
+--  attribute MARK_DEBUG of Addr: signal is "TRUE";
+--  attribute MARK_DEBUG of Data: signal is "TRUE";
+
 
 begin
   
@@ -153,12 +163,12 @@ begin
               BusState  <= e_AcknowledgeA;
               SdaEn     <= false;
             else
-              SdaInt      <= c_SlaveAddr(8-BitCnt);
+              SdaInt      <= c_SlaveAddr(BitCnt-2); --#### moet bitcnt-2 zijn
             end if;
           when e_AcknowledgeA =>
             BusState    <= e_Data;
             SclEn       <= true;
-            BitCnt      <= 8;     -- #############  MISTAKE WAS 7 ###########
+            BitCnt      <= 7;     
             if Writing or (Reading and WritingAddr) then
               SdaInt    <= Addr(7);
               SdaEn     <= true;
@@ -168,9 +178,9 @@ begin
           when e_Data =>
             if not WritingAddr and Reading then
               if SDA = '0' then
-                DataRead(ReadCnt)(7-BitCnt) <= '0';
+                DataRead(ReadCnt)(BitCnt) <= '0';     -- ######### fout stond op 7-bitcnt
               else
-                DataRead(ReadCnt)(7-BitCnt) <= '1';
+                DataRead(ReadCnt)(BitCnt) <= '1';
               end if;
             end if;
             if BitCnt = 0 then
@@ -186,10 +196,10 @@ begin
             else
               if WritingAddr then
                 SdaEn   <= true;
-                SdaInt  <= Addr(8-BitCnt);
+                SdaInt  <= Addr(BitCnt-1);  -- ########## fout stond op 8-bitcnt
               elsif Writing then
                 SdaEn   <= true;
-                SdaInt  <= Data(8-BitCnt);
+                SdaInt  <= Data(BitCnt-1);
               else
                 SdaEn   <= false;
               end if;
@@ -263,7 +273,7 @@ begin
         if Status and Program = e_ReadStat then -- Program has just read the status register
           if DataRead(0)(0) = '0' then -- the RDY bit of the status register is not set
             Program     <= e_ReadStat; -- read the status register again
-            Addr        <= x"09";
+            Addr        <= x"F6";
             Writing     <= false;
             Reading     <= true;
             Burst       <= false;
@@ -276,14 +286,14 @@ begin
           case Program is
             when e_SetMode =>
               Program   <= e_ReadStat;
-              Addr      <= x"09"; -- this specific device has a "status" register at address 09
+              Addr      <= x"F6"; -- this specific device has a "status" register at address 09
               Writing   <= false;
               Reading   <= true;
               Burst     <= false;
               Status    <= true;
             when e_ReadStat =>
               Program   <= e_ReadData;
-              Addr      <= x"03"; -- this specific device has "data" registers at address 03 through 08
+              Addr      <= x"F6"; -- this specific device has "data" registers at address 03 through 08
               Writing   <= false;
               Reading   <= true;
               Burst     <= true;
@@ -294,8 +304,8 @@ begin
               Burst     <= false;
             when others => -- e_Idle
               Program   <= e_SetMode;
-              Addr      <= x"02"; -- this specific device has a "setmode" register at address 02
-              Data      <= x"01"; -- single mode
+              Addr      <= x"F4"; -- this specific device has a "setmode" register at address 02
+              Data      <= x"2E"; -- single mode
               Writing   <= true;
               Reading   <= false;
               Burst     <= false;
