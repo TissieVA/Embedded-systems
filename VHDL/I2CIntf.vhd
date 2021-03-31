@@ -16,7 +16,7 @@ end I2CIntf;
 
 architecture RTL of I2CIntf is
 
-  --attribute MARK_DEBUG : string;
+  
 
   constant c_ClkDiv     : integer := g_ClkFreq / (4 * g_BusFreq); -- 1/4 of i2c bus frequency
 
@@ -45,13 +45,16 @@ architecture RTL of I2CIntf is
   signal WritingAddr    : boolean;
   signal Burst          : boolean;
   signal Status         : boolean;
-
+  
+  
+--  attribute MARK_DEBUG : string;
 --  attribute MARK_DEBUG of SDA: signal is "TRUE";
 --  attribute MARK_DEBUG of SCL: signal is "TRUE";
 --  attribute MARK_DEBUG of BusState: signal is "TRUE";
 --  attribute MARK_DEBUG of Addr: signal is "TRUE";
 --  attribute MARK_DEBUG of Data: signal is "TRUE";
-
+--  attribute MARK_DEBUG of BitCnt: signal is "TRUE";
+--  attribute MARK_DEBUG of SdaInt: signal is "TRUE";
 
 begin
   
@@ -178,7 +181,7 @@ begin
           when e_Data =>
             if not WritingAddr and Reading then
               if SDA = '0' then
-                DataRead(ReadCnt)(BitCnt) <= '0';     -- ######### fout stond op 7-bitcnt
+                DataRead(ReadCnt)(BitCnt) <= '0';     --######fout stond op 7-BitCnt
               else
                 DataRead(ReadCnt)(BitCnt) <= '1';
               end if;
@@ -293,7 +296,7 @@ begin
               Status    <= true;
             when e_ReadStat =>
               Program   <= e_ReadData;
-              Addr      <= x"F6"; -- this specific device has "data" registers at address 03 through 08
+              Addr      <= x"AA"; -- this specific device has "data" registers at address 03 through 08
               Writing   <= false;
               Reading   <= true;
               Burst     <= true;
