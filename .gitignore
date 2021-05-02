@@ -160,3 +160,8 @@ EFM32 Happy Gecko/SimplicityStudio/outgoing/
 EFM32 Happy Gecko/PortfolioEFM32.docx
 VHDL/PortfolioVHDL.docx
 VHDL/PortfolioVHDL.pdf
+project_Embedded.runs/
+project_Embedded.hw/
+project_Embedded.sim/
+project_Embedded.ip_user_files/
+project_Embedded.cache/

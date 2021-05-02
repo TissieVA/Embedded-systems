@@ -16,7 +16,7 @@ end I2CIntf;
 
 architecture RTL of I2CIntf is
 
-  
+ 
 
   constant c_ClkDiv     : integer := g_ClkFreq / (4 * g_BusFreq); -- 1/4 of i2c bus frequency
 
@@ -55,6 +55,8 @@ architecture RTL of I2CIntf is
 --  attribute MARK_DEBUG of Data: signal is "TRUE";
 --  attribute MARK_DEBUG of BitCnt: signal is "TRUE";
 --  attribute MARK_DEBUG of SdaInt: signal is "TRUE";
+  --attribute MARK_DEBUG of DataRead: signal is "TRUE";
+
 
 begin
   
@@ -181,7 +183,7 @@ begin
           when e_Data =>
             if not WritingAddr and Reading then
               if SDA = '0' then
-                DataRead(ReadCnt)(BitCnt) <= '0';     --######fout stond op 7-BitCnt
+                DataRead(ReadCnt)(BitCnt) <= '0';                                           --######fout stond op 7-BitCnt
               else
                 DataRead(ReadCnt)(BitCnt) <= '1';
               end if;
