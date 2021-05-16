@@ -165,3 +165,5 @@ project_Embedded.hw/
 project_Embedded.sim/
 project_Embedded.ip_user_files/
 project_Embedded.cache/
+*.pdf
+*.docx
